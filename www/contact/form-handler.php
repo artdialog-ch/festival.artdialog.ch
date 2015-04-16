@@ -4,6 +4,7 @@ include('SMTPClass.php');
 $use_smtp = '0';
 $emailto = 'info@artdialog.ch';
 
+
 	// retrieve from parameters
 	$emailfrom = isset($_POST["email"]) ? $_POST["email"] : "";
 	$nocomment = isset($_POST["nocomment"]) ? $_POST["nocomment"] : "";

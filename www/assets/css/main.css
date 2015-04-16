@@ -33,7 +33,12 @@ p {
 }
 
 a {
-    color: #2DA8DF;
+    color: #2DA8DF;	
+	outline: 0;
+}
+a:hover, a:active, a:focus {
+	outline: 0;
+	text-decoration:none;
 }
 
 a:hover {
@@ -227,7 +232,8 @@ div.main {
 
 .bg-black {
     background: url(../img/bg-black-80.png);
-    padding: 30px;
+    padding: 15px;
+	margin: 0 0px;
 }
 
 .row.margin-top {
@@ -278,45 +284,59 @@ ul.language {
     top: -5px;
     right: 0;
     list-style: none;
-    padding: none;
+    padding: 0;
     float: right;
     z-index: 1000;
 }
 
 ul.language li {
-    display: inline-block;
+    display: block;
+	float:left;
     padding: 0;
-    box-shadow: 3px 3px 3px #000;
+    
 }
 
-ul.language li a {
-    padding-top: 10px;
+ul.language li a {  
+	position:relative;
     display: block;
-    width: 50px;
+    width: 40px;
     height: 40px;
+	line-height: 47px;
     color: #fff;
     text-align: center;
-    font-weight: 800;
-    font-size: 20px;
-    text-shadow: 2px 2px #000;
+    font-weight: 400;
+    font-size: 19px;
+	padding-top:0px;
+	z-index:5;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);	
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+	transition: all 0.2s ease-in-out 0s;
+	
+}
+
+
+
+ul.language li a:hover {
+    height: 48px;
+	padding-top:8px;
+    transition: all 0.2s ease-in-out 0s;
 }
 
 ul.language li a.active {
-    height: 50px;
-}
-
-ul.language li a:hover {
     height: 60px;
-    transition: all 0.2s ease-in-out 0s;
+	padding-top:0px;
+	line-height:74px;
+	z-index:6;
 }
 
 ul.language li a.de {
     background: #2da8df;
-    margin-right: -6px;
+    margin-right: -3px;
 }
 
 ul.language li a.fr {
     background: #af50c3;
+	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 /* ==================
    Front
@@ -486,7 +506,17 @@ h2.cal {
     font-size: 26px;
 }
 
+.calendar-2 h2 {
+    font-size: 26px;
+	color:white;
+}
+
 .calendar-2 h1 span {
+    font-size: 36px;
+    font-weight: 800;
+    color: #9e1f63;
+}
+.calendar-2 h2 span {
     font-size: 36px;
     font-weight: 800;
     color: #9e1f63;
@@ -815,7 +845,7 @@ address {
 }
 
 .detail div.day span.digits {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 60px;
     display: block;
 }
@@ -887,13 +917,22 @@ ul.options li.zuruck {
 }
 
 .detail .title {
+	display: inline-block;
     text-transform: uppercase;
     color: #2da8df;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 500;
+	line-height: 24px;
+	margin-left:15px;
+	float: left;
 }
 
 .detail .artist h1 {
+    padding-left: 15px;
+    color: #af50c3;
+    text-transform: none;
+}
+.detail .artist h2 {
     padding-left: 15px;
     color: #af50c3;
     text-transform: none;
@@ -910,7 +949,7 @@ a.wine {
     font-size: 16px;
     line-height: 50px;
     padding-left: 50px;
-    background: url(../img/wine.png) no-repeat left center;
+    background: url(../img/wine.png) no-repeat left top;
 }
 
 a.wine:hover {
@@ -1038,6 +1077,9 @@ footer div.copyright {
 .textarea.form-control {
     height: 100px;
     vertical-align: top;
+}
+input::-moz-focus-inner { 
+  border: 0; 
 }
 
 div.fancy-select {
@@ -1170,6 +1212,376 @@ div.fancy-select {
     max-width: none;
 }
 
-.program-item-bottom-space {
-	padding-bottom: 80px;
+/* Owl style */
+
+
+.owl-controls{
+	display: none;
+	width: 100%;
+	text-align: center;
+	margin-top: 15px;
 }
+
+.owl-controls .owl-dots{
+	display: inline-block;
+	zoom: 1;
+}
+
+.owl-controls .owl-dots .owl-dot{
+	display: inline-block;	
+}
+.owl-controls .owl-dots .owl-dot.active span, 
+.owl-controls .owl-dots .owl-dot:hover  span{
+	background:#af50c3;
+}
+.owl-controls .owl-dots .owl-dot span{
+	width: 10px;
+	height: 10px;
+	margin: 5px 7px;
+	background: #d6d6d6;
+	display: block;
+	-webkit-backface-visibility: visible;
+	-webkit-transition: opacity 200ms ease;
+	-moz-transition: opacity 200ms ease;
+	-ms-transition: opacity 200ms ease;
+	-o-transition: opacity 200ms ease;
+	transition: opacity 200ms ease;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+#slider-sm-12 .owl-controls{
+	display: inline-block;
+}
+
+/* */ 
+
+.menu-2{
+	text-align:right;
+}
+.mb-1{
+	margin-bottom:15px;
+}
+.ml-1{
+	margin-left:15px;
+}
+.ml-2{
+	margin-left:30px;
+}
+
+#returnmessage{
+	visibility:hidden;
+	opacity:0;
+	position: absolute;
+	top:20px;
+	width: 100%;
+	text-align: center;
+	padding-right: 30px;
+}
+
+#returnmessage.show{
+	visibility:visible;
+	opacity:1;
+}
+
+
+#returnmessage .returnmessage-inner{
+	display: inline-block;
+	padding: 30px 30px;
+	border: 1px solid rgb(0, 153, 255);
+	font-size: 14px;
+	background-color: rgb(0, 129, 195);
+}
+
+
+/* Art category a tagline color*/ 
+
+.recital span.turquoise {
+  color: #09e3d1;
+}
+
+.kunst span.turquoise {
+	color: #af50c3;
+}
+
+
+	
+
+/* */
+
+
+@media (max-width:1199px) and (min-width:992px) {
+
+	.detail div.date {
+		height: 120px;
+	}
+	
+	.detail div.day {
+		font-size: 40px;
+		line-height: 50px;
+		width: 135px;
+		min-height: 90px;
+		height: 100%;
+		max-height: 120px;
+		padding-top: 10px;
+	}
+	
+	.detail div.day span.digits {
+		font-size:44px;
+	}
+	
+	.detail div.place {
+		display: inline-block;
+		width: 100%;
+		padding: 15px 0 5px 150px;
+		font-size: 32px;
+		line-height: 45px;
+		text-align: left;
+	}
+	
+	
+	.detail .title {
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 28px;
+		width: 100%;
+		text-align: left;		
+		float: none;
+		margin: 20px 0px;
+	}
+	
+	.menu-2 {
+		margin-top: 20px;
+		text-align: right;
+		display: inline-block;
+		width: 100%;
+		font-size: 18px;
+	}
+	
+	.tagline {
+		position: absolute;
+		top: 100px;
+		left: -100px;
+		right: inherit;
+		height: 160px;
+		font-size: 50px;
+		padding: 0;
+	}
+	
+
+}
+
+
+@media (max-width:991px) and (min-width:768px) {
+
+	.detail div.date {
+		height: 120px;
+	}
+	
+	.detail div.day {
+		font-size: 40px;
+		line-height: 50px;
+		width: 135px;
+		min-height: 90px;
+		height: 100%;
+		max-height: 120px;
+		padding-top: 10px;
+	}
+	
+	.detail div.day span.digits {
+		font-size:44px;
+	}
+	
+	.detail div.place {
+		display: inline-block;
+		width: 100%;
+		padding: 15px 0 5px 150px;
+		font-size: 32px;
+		line-height: 45px;
+		text-align: left;
+	}
+	
+	
+	.detail .title {
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 28px;
+		width: 100%;
+		text-align: left;		
+		float: none;
+		margin: 20px 0px;
+	}
+	
+	.menu-2 {
+		margin-top: 20px;
+		text-align: right;
+		display: inline-block;
+		width: 100%;
+		font-size: 18px;
+	}
+	
+	.tagline {
+		position: absolute;
+		top: 80px;
+		left: 0;		
+		height: 160px;
+		font-size: 34px;
+		padding: 0;
+	}	
+	.front .tagline {
+		position: absolute;
+		top: 40px;
+		left: 0;		
+		height: 160px;
+		font-size: 34px;
+		padding: 0;
+	}
+	
+	
+	
+
+}
+
+@media (max-width:767px){
+
+	.detail div.date {
+		height: 100%;
+		min-height: 90px;
+		max-height: 120px;
+	}
+	
+	.detail div.day {
+		font-size: 32px;
+		line-height: 36px;
+		width: 105px;
+		min-height: 90px;
+		height: 100%;
+		max-height: 120px;
+		padding-top: 10px;
+	}
+	
+	.detail div.day span.digits {
+		font-size:35px;
+	}
+	
+	.detail div.place {
+		display: inline-block;
+		width: 100%;
+		padding: 15px 0 5px 105px;
+		font-size: 26px;
+		line-height: 28px;
+		text-align: center;
+	}
+	
+	
+	.detail .title {
+		display: inline-block;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 28px;
+		width: 100%;
+		text-align: center;		
+		float: none;
+		margin: 20px 0px;
+	}
+	
+	.menu-2 {
+		margin-top: 20px;
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+		font-size: 18px;
+	}
+	
+	h1, .h1 , h2, .h2 {
+		font-size: 30px;
+	}
+	
+	.tagline {
+		font-size: 40px;
+		padding: 60px 0 30px 0px;
+	}
+	
+	
+
+}
+
+
+@media (max-width:480px){
+
+	.detail div.date {
+		height: 75px;
+		min-height: 75px;
+		max-height: 120px;
+	}
+	
+	.detail div.day {
+		font-size:26px;
+		line-height: 28px;
+		width: 90px;
+		height: 75px;
+		padding-top: 10px;
+	}
+	
+	.detail div.day span.digits {
+		font-size:26px;
+	}
+	
+	.detail div.place {
+		display:inline-block;
+		width:100%;
+		padding: 15px 0 5px 100px;
+		font-size: 18px;
+		line-height: 20px;
+		text-align: center;
+	}
+	
+	
+	.detail .title {
+		display: inline-block;
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 18px;
+		width: 100%;
+		text-align: center;		
+		float: none;
+		margin: 20px 0px;
+	}
+	
+	.menu-2 {
+		text-align: center;
+		display: inline-block;
+		width: 100%;
+		font-size: 15px;
+	}
+	
+	a.wine {
+		line-height: 22px;
+	}
+	
+	h1, .h1 , h2, .h2 {
+		font-size: 18px;
+	}
+	
+	.detail .artist p {
+		font-size: 14px;
+	}
+	
+	.tagline {
+		font-size: 28px;
+		padding: 60px 0 30px 0px;
+	}
+	
+	.program-item-bottom-space {
+		padding-bottom: 80px;
+	}
+	
+}
+
+
+
+
+
