@@ -1212,8 +1212,11 @@ div.fancy-select {
     max-width: none;
 }
 
-/* Owl style */
+.program-item-bottom-space {
+	padding-bottom: 80px;
+}
 
+/* Owl style */
 
 .owl-controls{
 	display: none;
@@ -1574,14 +1577,5 @@ div.fancy-select {
 		font-size: 28px;
 		padding: 60px 0 30px 0px;
 	}
-	
-	.program-item-bottom-space {
-		padding-bottom: 80px;
-	}
-	
+		
 }
-
-
-
-
-
