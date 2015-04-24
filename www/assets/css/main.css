@@ -250,7 +250,7 @@ span.heavy {
 }
 
 span.blue {
-    color: #00a8e9;
+    color: #2da8df;
 }
 
 span.turquoise {
@@ -267,12 +267,16 @@ span.lime {
     color: #5af10f;
 }
 
+span.orange {
+    color: #f99f03;
+}
+
 span.purple {
-    color: #ff18a1;
+    color: #d256fb;
 }
 
 span.magenta {
-    color: #ff18a1;
+    color: #d21685;
 }
 
 header .container {
@@ -1579,3 +1583,26 @@ div.fancy-select {
 	}
 		
 }
+
+a.img-link{
+	color:white;
+}
+a.img-link:hover{
+	color:white;
+}
+
+.art-title{
+	font-size: 52px;
+}
+
+.span.art {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.gallery-item img{
+	height:175px;
+	width:auto;
+}
+
+
