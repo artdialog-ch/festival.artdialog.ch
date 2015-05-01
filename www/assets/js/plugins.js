@@ -277,3 +277,22 @@ $(document).ready(function() {
 		return false;
 	});
 });
+
+// Masonry
+
+
+$(document).ready(function() {
+
+ 
+
+$('#gallery .row').masonry({
+
+ 
+
+ itemSelector: '.col-md-3'
+
+});
+
+ 
+
+});
