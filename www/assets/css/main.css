@@ -300,7 +300,7 @@ ul.language li {
     
 }
 
-ul.language li a {  
+ul.language li a, ul.language li span {  
 	position:relative;
     display: block;
     width: 40px;
@@ -315,10 +315,7 @@ ul.language li a {
 	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);	
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
 	transition: all 0.2s ease-in-out 0s;
-	
 }
-
-
 
 ul.language li a:hover {
     height: 48px;
@@ -326,22 +323,23 @@ ul.language li a:hover {
     transition: all 0.2s ease-in-out 0s;
 }
 
-ul.language li a.active {
+ul.language li > span {
     height: 60px;
 	padding-top:0px;
 	line-height:74px;
 	z-index:6;
 }
 
-ul.language li a.de {
+html:lang(de) ul.language li > span, ul.language li > a[hreflang='de'] {
     background: #2da8df;
     margin-right: -3px;
 }
 
-ul.language li a.fr {
+html:lang(fr) ul.language li > span, ul.language li > a[hreflang='fr'] {
     background: #af50c3;
 	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
 }
+
 /* ==================
    Front
    ================== */
@@ -1608,6 +1606,6 @@ a.img-link:hover{
   font-size: 22px;
 }
 
-
-
-
+li.top-double-space {
+	margin-top: 1em;
+}
