@@ -178,6 +178,8 @@ $(function() {
 
     var $container = $('#program'),
         filters = {};
+		
+	if ( $container.length !== 0 ){ 
 
     $container.isotope({
         itemSelector: '.isotope-item'
@@ -205,6 +207,8 @@ $(function() {
         });
         return false;
     });
+	
+}
 
     // $('ul>li').click(function() {
     //     var $this = $(this);
@@ -278,21 +282,70 @@ $(document).ready(function() {
 	});
 });
 
-// Masonry
-
-
 $(document).ready(function() {
 
- 
+		function ajaxgallery( yy ){
 
-$('#gallery .row').masonry({
+			yy = typeof yy !== 'undefined' ? yy : 2014;
+	
+		$.post('/de/gallery.php',{ year: yy}, function(data) {
 
- 
+			var items = $(data).find('#gal-items.row .' + yy);
 
- itemSelector: '.col-md-3'
+			var years = $(data).find('#gal-filters .year');
+
+		$('#gallery .row').remove();
+
+		$('#gallery').append('<div class="row" />');
+
+		$('#gallery .row').html(items); 
+
+		$('.year-pager').html(years);
+
+			var $container = $('#gallery .row').imagesLoaded( function() {
+
+		$container.isotope({
+
+	filter: '*' 
 
 });
 
- 
+$('#gallery .col-md-3').viewportChecker({
+
+	classToAdd: 'animated fadeInUp', 
+
+}); 
+
+});
+
+$('.year-pager a').on('click', function(event){
+
+	event.preventDefault();
+
+	ajaxgallery($(this).text());
+
+});
+
+$('.year-pager a').each(function(){
+
+	if ($(this).text() == yy){ 
+
+	$(this).addClass('active');
+
+} 
+
+});
+
+});
+
+}
+
+
+if ($('#gallery').length !== 0){
+
+	ajaxgallery();
+
+}
+
 
 });
