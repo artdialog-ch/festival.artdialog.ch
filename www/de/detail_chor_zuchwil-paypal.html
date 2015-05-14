@@ -233,9 +233,9 @@
             </div>
             <div class="modal-footer">
               <form id="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">                            
-                <input type="hidden" name="notify_url" value="http://localhost:5000/paypal/notify">
-                <input type="hidden" name="return_return" value="http://localhost:8000/de/detail_chor_zuchwil.html?paypal=cancel">
-                <input type="hidden" name="cancel" value="http://localhost:8000/de/detail_chor_zuchwil.html?paypal=success">                
+                <input type="hidden" name="notify_url" value="https://epassticket.herokuapp.com/paypal/ipn">
+                <input type="hidden" name="return_cancel" value="http://localhost:8000/de/detail_chor_zuchwil-paypal.html?paypal=cancel">
+                <input type="hidden" name="return" value="http://localhost:8000/de/detail_chor_zuchwil-paypal.html?paypal=success">                
                 <input id="amount" type="hidden" name="amount" value="2">
                 <input type="hidden" name="custom" value="OREYA0206">
                 
