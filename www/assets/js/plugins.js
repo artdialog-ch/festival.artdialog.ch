@@ -284,53 +284,105 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-		function ajaxgallery( yy ){
+ 
 
-			yy = typeof yy !== 'undefined' ? yy : 2014;
-	
-		$.post('/de/gallery.php',{ year: yy}, function(data) {
+	function ajaxgallery( yy ){
 
-			var items = $(data).find('#gal-items.row .' + yy);
+		yy = typeof yy !== 'undefined' ? yy : 2014;
 
-			var years = $(data).find('#gal-filters .year');
+ 
 
-		$('#gallery .row').remove();
+$.post('/de/gallery.php',{ year: yy}, function(data) {
 
-		$('#gallery').append('<div class="row" />');
+var items = $(data).find('#gal-items.row .' + yy);
 
-		$('#gallery .row').html(items); 
+var years = $(data).find('#gal-filters .year');
 
-		$('.year-pager').html(years);
+$('#gallery .row').remove();
 
-			var $container = $('#gallery .row').imagesLoaded( function() {
+$('#gallery').append('<div class="row" />');
 
-		$container.isotope({
+$('.year-pager').html(years);
 
-	filter: '*' 
+var j = 0;
+
+var i = 0;
+
+var container = $('#gallery .row');
+
+container.masonry({
+
+  itemSelector: '.col-md-3',
+
+  columnWidth:  1,
+
+}); 
+
+ 
+
+galadditems(j);
+
+ 
+
+function galadditems(j){
+
+i = 12*j; 
+
+var elem = items.slice(i, i+12);
+
+elem.each(function(){
+
+$(this).attr('style', 'opacity:0');
 
 });
 
-$('#gallery .col-md-3').viewportChecker({
+container.append(elem); 
 
-	classToAdd: 'animated fadeInUp', 
+container = $('#gallery .row').imagesLoaded( function() { 
+
+container.masonry('appended',elem); 
+
+$('.gal-items-end').remove();
+
+$('#gallery').append('<div class="gal-items-end" />'); 
+
+$('.gal-items-end').viewportChecker({
+
+offset:-200, 
+
+callbackFunction:function(elem, action){
+
+j++;
+
+if(i < items.length ){
+
+galadditems(j); 
+
+}
+
+}
 
 }); 
 
 });
 
+}
+
+ 
+
 $('.year-pager a').on('click', function(event){
 
-	event.preventDefault();
+event.preventDefault();
 
-	ajaxgallery($(this).text());
+ajaxgallery($(this).text());
 
 });
 
 $('.year-pager a').each(function(){
 
-	if ($(this).text() == yy){ 
+if ($(this).text() == yy){ 
 
-	$(this).addClass('active');
+$(this).addClass('active');
 
 } 
 
@@ -340,12 +392,14 @@ $('.year-pager a').each(function(){
 
 }
 
+ 
 
 if ($('#gallery').length !== 0){
 
-	ajaxgallery();
+ajaxgallery();
 
 }
 
+ 
 
 });

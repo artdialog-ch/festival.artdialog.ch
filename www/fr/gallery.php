@@ -12,6 +12,7 @@ function is_ajax() {
 
 function gallery($year){
 	$dir ="../assets/img/gallery";
+	$years = array();
 	$outyears = "";
 	$outputimg = "";
 	
@@ -42,10 +43,15 @@ function gallery($year){
 					}
 				}
 			}
-			$outyears .= '<li class="year"><a href="#">' . $ff . '</a></li>';	
+			$years[] = $ff;
 		}
 	}
-		
+	
+	$years = array_reverse($years);
+	foreach ( $years as $y){
+		$outyears .= '<li class="year"><a href="#">' . $y . '</a></li>';
+	}
+	
 	$output =  '<div id="gal" style="display:block;">
 					<div id="gal-filters">
 						<div class="years"> '. $outyears  .'</div>

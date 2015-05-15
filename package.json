@@ -1,0 +1,24 @@
+{
+  "name": "festival.artdialog.ch",
+  "version": "1.0.0",
+  "description": "website for festival projects of ArtDialog.ch",
+  "main": "www/index.php",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-ftp-deploy": "^0.1.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artdialog-ch/festival.artdialog.ch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/artdialog-ch/festival.artdialog.ch/issues"
+  },
+  "homepage": "https://github.com/artdialog-ch/festival.artdialog.ch#readme"
+}
