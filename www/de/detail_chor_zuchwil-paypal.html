@@ -233,14 +233,13 @@
             </div>
             <div class="modal-footer">
               <form id="paypal" action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post" target="_top">                            
-                <input type="hidden" name="notify_url" value="https://epassticket.herokuapp.com/paypal/ipn">
+                <!--  input type="hidden" name="notify_url" value="https://epassticket.herokuapp.com/paypal/ipn" -->
                 <input type="hidden" name="return_cancel" value="http://localhost:8000/de/detail_chor_zuchwil-paypal.html?paypal=cancel">
-                <input type="hidden" name="return" value="http://localhost:8000/de/detail_chor_zuchwil-paypal.html?paypal=success">                
-                <input id="amount" type="hidden" name="amount" value="2">
-                <input type="hidden" name="custom" value="OREYA0206">
+                <input type="hidden" name="return" value="http://localhost:8000/de/detail_chor_zuchwil-paypal.html?paypal=success">                                
+                <input type="hidden" name="charset" value="utf-8">
                 
 								<input type="hidden" name="cmd" value="_s-xclick">
-								<input type="hidden" name="hosted_button_id" value="53P7NK5BBG2PG">
+								<input type="hidden" name="hosted_button_id" value="N35HSBZKYJ6SS">
 								<input type="image" src="https://www.sandbox.paypal.com/de_DE/CH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
 								<img alt="" border="0" src="https://www.sandbox.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
 							</form>

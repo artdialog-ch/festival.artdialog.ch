@@ -13,5 +13,5 @@ foreach($languages as $lang){
     }
 }
 
-header("Location: " . $redirect_lang . "/index.html");
+header("Location: " .  '/' . $redirect_lang . '/');
 ?>
