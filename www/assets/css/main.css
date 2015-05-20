@@ -599,7 +599,8 @@ div.cards h3 {
 /* ==================
    Gallery
    ================== */
-
+ 
+   
 ul.year-pager {
     padding: 0;
     list-style: none;
@@ -625,7 +626,7 @@ ul.pager a.active {
 
 @media (min-width: 768px) {
     ul.year-pager li a {
-        padding-right: 100px;
+        padding-right: 60px;
         font-size: 40px;
     }
 }
