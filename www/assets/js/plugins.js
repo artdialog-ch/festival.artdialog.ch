@@ -288,7 +288,7 @@ $(document).ready(function() {
 
 	function ajaxgallery( yy ){
 
-		yy = typeof yy !== 'undefined' ? yy : 2014;
+		yy = typeof yy !== 'undefined' ? yy : 2015;
 
  
 
