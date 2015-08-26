@@ -130,7 +130,8 @@
 						<div class="col-sm-1"></div>
                         <div class="col-sm-5">
                             <ul class="options">
-								<li class="tickets"><a href="https://www.ticketino.com/Default.aspx?id=28&eventid=36084" target="_blank">Tickets</a></li>
+                                <li id="tickets-casa" class="tickets hidden"><a href="#" onclick="$('#tickets-modal').modal('show');return false;" >Tickets</a></li>
+								                <li id="tickets-ticketino" class="tickets"><a href="https://www.ticketino.com/Default.aspx?id=28&eventid=36084" target="_blank">Tickets</a></li>
                                 <li class="ort"><a href="https://maps.google.com/maps?q=Chemin+de+la+Combe+2520+La+Neuveville+switzerland&hl=en&ll=47.059306,7.065067&spn=0.020465,0.052314&sll=47.142373,7.24529&sspn=0.010217,0.026157&hq=Chemin&hnear=La+Combe,+2520+La+Neuveville,+Switzerland&t=m&z=15" class="popup-gmaps">Ort</a></li>
                                 <li class="zuruck"><a href="programm.html">Zuruck</a></li>
                             </ul>
@@ -195,6 +196,44 @@
             </div>
         </div>
     </div>
+    <div id="tickets-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+	            <div class="modal-header">
+	                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	                <h4 class="modal-title">Tickets bestellen</h4>
+	            </div>
+              <div class="modal-body">
+                  <p class="text-info">Sie können die Eintritskarten bei <a href="https://www.ticketino.com/Default.aspx?id=28&eventid=36084" target="_blank">TICKETINO</a> bestellen 
+                  oder <strong>eTickets</strong> direkt bei uns kaufen. Alle gängigen Kreditkarten werden angenommen. Die Zahlung wird dabei über PayPal abgewickelt, 
+                  ohne dass Sie sich registrieren müssen, falls Sie kein PayPal-Konto haben.
+                  </p>
+                  <hr >
+                  <h3 style="color:#2DA8DF; text-transform: none;">eTicket kaufen:</h3>
+                  <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="FYGEA95JTV5AN">
+                    <input type="hidden" name="on0" value="Preis">
+                    <input type="hidden" name="currency_code" value="CHF">
+                    <div class="form-group">
+                      <label for="preise">Preise:</label>
+                      <select id="preise" name="os0" style="background-color: #101020;">
+                        <option value="Erwachsene" selected>CHF 30.00 (Erwachsene)</option>
+                        <option value="Studenten">CHF 20.00 (Studenten und Lehrlinge ab 18 Jahren)</option>
+                        <option value="Schueler">CHF 10.00 (Schüler und Lehrlinge 12-18 Jahren)</option>
+                        <option value="Test">Test 0.10 CHF</option>                      
+                      </select>
+                    </div>
+                    <div style="margin-top: 1em; margin-left: 1em;">
+                      <input class="pull-right" type="image" src="https://www.paypalobjects.com/de_DE/CH/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online bezahlen – mit PayPal.">
+                      <p style="width:60%; color:#E0E0D0;" class="small"><em>Für die Bestellung werden Sie auf PayPal-Seite umgeleitet.
+                      Anzahl der Tickets können Sie dort bestimmen.</em></p>
+                    </div>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
     <footer>
         <div class="container">
             <div class="row">
@@ -252,5 +291,13 @@
     ga('create', 'UA-61313351-2', 'auto');
     ga('send', 'pageview');
     </script>
+    <script type="text/javascript">
+        var qStr = window.location.search.substring(1)        
+        if (qStr.indexOf('tickets') >= 0) {
+        	$('#tickets-modal').modal('show');
+          $('#tickets-casa').removeClass("hidden")
+          $('#tickets-ticketino').addClass("hidden")
+        }
+    </script>       
 </body>
 </html>
