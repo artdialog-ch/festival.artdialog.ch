@@ -145,13 +145,14 @@ ul.fancy-list li {
 }
 
 .aside {
-    padding-left: 30px;
+    padding-left: 45px;
 }
+
 /* NAVBAR */
 
 .navbar-nav {
     margin: 0;
-    padding: 7.5px 15px;
+    padding-top: 7.5px;
 }
 
 .navbar-default {
@@ -1610,6 +1611,8 @@ a.img-link:hover{
 li.top-double-space {
 	margin-top: 1em;
 }
+
+
 
 .modal-dialog .modal-content {
 	background-color: rgb(30,30,30); 
