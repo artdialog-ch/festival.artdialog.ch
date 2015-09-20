@@ -26,13 +26,16 @@ function gallery($year){
 					foreach($ffs2 as $ff2){
 						if($ff2 != '.' && $ff2 != '..'){
 							$filename = preg_replace('/\\.[^.\\s]{3,4}$/', '', $ff2);
+							if (($pos = strpos($filename, "_")) !== FALSE) {
+							$filename = substr($filename, $pos + 1); 
+							} 
 							$filename = str_replace("_","</br>",$filename);
 							$filename = str_replace("-"," ",$filename);
 							
 							$outputimg .= '<div class="col-md-3 col-sm-6 ' . $ff . '">
 												<div class="gallery-item">
 													<img src="../assets/img/gallery/' . $ff . '/' . $ff2 . '" alt=".." class="img-responsive center-block">
-													<a href="../assets/img/gallery/' . $ff . '/' . $ff2 . '" title="image title">
+													<a href="../assets/img/gallery/' . $ff . '/' . $ff2 . '" data-title="' . $filename . '">
 														<div class="caption">
 															' . $filename . '
 														</div>
