@@ -1621,20 +1621,20 @@ li.top-double-space {
 	margin-top: 1em;
 }
 
-.video-galery .youtube {
-	width: 100%;
-	height: 461.25px; 
-}
-@media screen and (max-width: 767px) {
-	.video-galery .youtube {
-		height: 200px; 
-	}
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
 }
 
-@media screen and (max-width: 992px) {
-	.video-galery .youtube {
-		height: 250px; 
-	}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
 }
 
 .video-galery > div {
@@ -1648,7 +1648,6 @@ li.top-double-space {
 
 .modal-dialog .modal-content .modal-header {
 	background-color: #0070D0;	
-
 }
 
 .modal-dialog .modal-content .modal-header button.close {
