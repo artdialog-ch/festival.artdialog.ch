@@ -184,7 +184,19 @@ $(function() {
     $container.isotope({
         itemSelector: '.isotope-item'
     });
+	var hash = window.location.hash.split('#') ;		
 
+		if( hash[1] !== 'undefined'){			
+
+			$('.selectpicker option').each(function(){
+
+				if( $(this).data('filter-value') == '.'+hash[1] ){
+
+					$container.isotope({ filter: '.'+hash[1] });
+
+				}
+			});			
+		}
     // filter buttons
     $('select').change(function() {
         var $this = $(this);
