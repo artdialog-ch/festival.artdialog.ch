@@ -21,7 +21,7 @@ h3 {
 }
 
 h2 {
-    color: #af50c3;
+    color: #28d9c1;
     font-weight: 700;
     text-transform: none;
     font-size: 36px;
@@ -33,7 +33,7 @@ p {
 }
 
 a {
-    color: #2DA8DF;	
+    color: #00b8ee;	
 	outline: 0;
 }
 a:hover, a:active, a:focus {
@@ -42,7 +42,7 @@ a:hover, a:active, a:focus {
 }
 
 a:hover {
-    color: #AF50C3;
+    color: #28d9c1;
     text-decoration: none;
 }
 
@@ -174,7 +174,7 @@ ul.fancy-list li {
 
 .navbar-default .navbar-nav > li > a {
     text-transform: uppercase;
-    color: #2da8df;
+    color: #00b8ee;
     font-size: 24px;
     line-height: 26px;
     padding: 3px 0;
@@ -183,14 +183,14 @@ ul.fancy-list li {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #AF50C3;
+    color: #28d9c1;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .active > a {
     background: transparent;
     box-shadow: none;
-    color: #af50c3;
+    color: #28d9c1;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -251,7 +251,7 @@ span.heavy {
 }
 
 span.blue {
-    color: #2da8df;
+    color: #00b8ee;
 }
 
 span.turquoise {
@@ -261,7 +261,7 @@ span.turquoise {
 span.violet {
     /*color: #009dde;*/
     
-    color: #AF50C3;
+    color: #28d9c1;
 }
 
 span.lime {
@@ -332,12 +332,12 @@ ul.language li > span {
 }
 
 html:lang(de) ul.language li > span, ul.language li > a[hreflang='de'] {
-    background: #2da8df;
+    background: #00b8ee;
     margin-right: -3px;
 }
 
 html:lang(fr) ul.language li > span, ul.language li > a[hreflang='fr'] {
-    background: #af50c3;
+    background: #28d9c1;
 	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
@@ -461,7 +461,7 @@ p.purple {
 }
 
 span.art.blue {
-    color: #2da8df;
+    color: #00b8ee;
 }
 
 span.art.aqua {
@@ -584,7 +584,7 @@ div.cards h3 {
 }
 
 .location-item a:hover {
-    color: #AF50C3;
+    color: #28d9c1;
     text-decoration: none;
 }
 
@@ -621,7 +621,7 @@ ul.year-pager li a {
 
 ul.year-pager a.active,
 ul.pager a.active {
-    color: #af50c3;
+    color: #28d9c1;
     text-decoration: underline;
 }
 
@@ -815,7 +815,7 @@ ul.patrons span {
 
 .contact address span {
     font-weight: 700;
-    color: #AF50C3;
+    color: #28d9c1;
 }
 
 address {
@@ -863,7 +863,7 @@ address {
 
 ul.options {
     padding: 0;
-    color: #2da8df;
+    color: #00b8ee;
 }
 
 ul.options li {
@@ -897,7 +897,7 @@ ul.options li.zuruck {
 }
 
 .detail .program-item h2 {
-    color: #af50c3;
+    color: #28d9c1;
     padding: 0;
     margin: 0;
     font-size: 26px;
@@ -913,7 +913,7 @@ ul.options li.zuruck {
 }
 
 .detail .program-item .left span.link {
-    color: #2da8df;
+    color: #00b8ee;
 }
 
 .detail span.link {
@@ -923,7 +923,7 @@ ul.options li.zuruck {
 .detail .title {
 	display: inline-block;
     text-transform: uppercase;
-    color: #2da8df;
+    color: #00b8ee;
     font-size: 24px;
     font-weight: 500;
 	line-height: 24px;
@@ -933,12 +933,12 @@ ul.options li.zuruck {
 
 .detail .artist h1 {
     padding-left: 15px;
-    color: #af50c3;
+    color: #28d9c1;
     text-transform: none;
 }
 .detail .artist h2 {
     padding-left: 15px;
-    color: #af50c3;
+    color: #28d9c1;
     text-transform: none;
 }
 
@@ -949,7 +949,7 @@ ul.options li.zuruck {
 
 a.wine {
     display: block;
-    color: #2da8df;
+    color: #00b8ee;
     font-size: 16px;
     line-height: 50px;
     padding-left: 50px;
@@ -957,7 +957,7 @@ a.wine {
 }
 
 a.wine:hover {
-    color: #AF50C3;
+    color: #28d9c1;
     text-decoration: none;
 }
 
@@ -1000,7 +1000,7 @@ footer a.top {
 }
 
 footer h2 {
-    color: #af50c3;
+    color: #28d9c1;
     font-size: 18px;
     padding-bottom: 30px;
     text-transform: uppercase;
@@ -1115,7 +1115,7 @@ div.fancy-select {
     background: transparent;
     font-size: 24px;
     font-weight: 700;
-    color: #af50c3;
+    color: #28d9c1;
     border: none;
     outline: none;
 }
@@ -1127,7 +1127,7 @@ div.fancy-select {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    color: #af50c3;
+    color: #28d9c1;
     background-color: transparent;
     border-color: transparent;
     border: none;
@@ -1193,7 +1193,7 @@ div.fancy-select {
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-    color: #af50c3;
+    color: #28d9c1;
     text-decoration: none;
     background-color: transparent;
     border: none;
@@ -1248,7 +1248,7 @@ div.fancy-select {
 }
 .owl-controls .owl-dots .owl-dot.active span, 
 .owl-controls .owl-dots .owl-dot:hover  span{
-	background:#af50c3;
+	background:#28d9c1;
 }
 .owl-controls .owl-dots .owl-dot span{
 	width: 10px;
@@ -1318,7 +1318,7 @@ div.fancy-select {
 }
 
 .kunst span.turquoise {
-	color: #af50c3;
+	color: #28d9c1;
 }
 
 
@@ -1643,7 +1643,7 @@ li.top-double-space {
 
 .modal-dialog .modal-content {
 	background-color: rgb(30,30,30); 
-	border-color: #2DA8DF;
+	border-color: #00b8ee;
 }
 
 .modal-dialog .modal-content .modal-header {
