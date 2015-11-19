@@ -103,32 +103,32 @@ a:hover {
 .btn.btn-primary {
     /*   background: url(../img/bg-btn.jpg) repeat-x center top;*/
     
-    background: -webkit-linear-gradient(#1b4693, #5d2b6b);
+    background: -webkit-linear-gradient(#28d9c1, #00b8ee);
     /* For Safari 5.1 to 6.0 */
     
-    background: -o-linear-gradient(#1b4693, #5d2b6b);
+    background: -o-linear-gradient(#28d9c1, #00b8ee);
     /* For Opera 11.1 to 12.0 */
     
-    background: -moz-linear-gradient(#1b4693, #5d2b6b);
+    background: -moz-linear-gradient(#28d9c1, #00b8ee);
     /* For Firefox 3.6 to 15 */
     
-    background: linear-gradient(#1b4693, #5d2b6b);
+    background: linear-gradient(#28d9c1, #00b8ee);
     /* Standard syntax (must be last) */
 }
 
 .btn.btn-primary:hover {
     /*   background: url(../img/bg-btn.jpg) repeat-x center top;*/
     
-    background: -webkit-linear-gradient(#5d2b6b, #1b4693);
+    background: -webkit-linear-gradient(#00b8ee, #28d9c1);
     /* For Safari 5.1 to 6.0 */
     
-    background: -o-linear-gradient(#5d2b6b, #1b4693);
+    background: -o-linear-gradient(#00b8ee, #28d9c1);
     /* For Opera 11.1 to 12.0 */
     
-    background: -moz-linear-gradient(#5d2b6b, #1b4693);
+    background: -moz-linear-gradient(#00b8ee, #28d9c1);
     /* For Firefox 3.6 to 15 */
     
-    background: linear-gradient(#5d2b6b, #1b4693);
+    background: linear-gradient(#00b8ee, #28d9c1);
     /* Standard syntax (must be last) */
 }
 
@@ -457,7 +457,7 @@ span.art.green {
 
 span.art.purple,
 p.purple {
-    color: #d256fb;
+    color: #28d9c1;
 }
 
 span.art.blue {
@@ -472,9 +472,7 @@ span.art.aqua {
     margin-bottom: 30px;
 }
 
-.aktuell-wrapper {
-    margin-left: 15px;
-}
+
 
 .calendar-item .date {
     font-size: 26px;
