@@ -148,6 +148,10 @@ ul.fancy-list li {
     padding-left: 45px;
 }
 
+.front .aside b{
+        font-weight: 400;
+}
+
 /* NAVBAR */
 
 .navbar-nav {
@@ -385,6 +389,7 @@ html:lang(fr) ul.language li > span, ul.language li > a[hreflang='fr'] {
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
+	font-weight: 400;
 }
 
 .grid-item .caption .dates .date-item {
@@ -1234,10 +1239,14 @@ div.fancy-select {
 /* Owl style */
 
 .owl-controls{
-	/*display: none;*/
+	display: none;
 	width: 100%;
 	text-align: center;
 	margin-top: 15px;
+}
+
+.sponsors .owl-controls{
+       display:block;
 }
 
 .owl-controls .owl-dots{
