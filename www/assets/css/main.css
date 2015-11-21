@@ -70,7 +70,7 @@ a:hover {
 }
 
 .tagline span.smaller {
-    font-size: 46px;
+    font-size: 40px;
 }
 
 @media (min-width: 769px) {
@@ -266,6 +266,10 @@ span.violet {
 
 span.lime {
     color: #5af10f;
+}
+
+span.hot-pink {
+	color: #ff18a1
 }
 
 span.orange {
@@ -1230,7 +1234,7 @@ div.fancy-select {
 /* Owl style */
 
 .owl-controls{
-	display: none;
+	/*display: none;*/
 	width: 100%;
 	text-align: center;
 	margin-top: 15px;
