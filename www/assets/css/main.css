@@ -148,7 +148,7 @@ ul.fancy-list li {
     padding-left: 45px;
 }
 
-.front .aside b{
+.aside > b{
         font-weight: 400;
 }
 
