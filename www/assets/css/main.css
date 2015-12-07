@@ -148,8 +148,8 @@ ul.fancy-list li {
     padding-left: 45px;
 }
 
-.aside > b{
-        font-weight: 400;
+.front .aside b{
+        font-weight: 300;
 }
 
 /* NAVBAR */
