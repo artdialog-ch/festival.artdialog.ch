@@ -1670,6 +1670,26 @@ li.top-double-space {
 	color: white;
 }
 
+.modal-dialog .modal-body form table {
+	width: 100%;
+	text-align: left;
+}
+
+#paypal button
+.modal-dialog .modal-body form input[name='submit'], 
+.modal-dialog .modal-body form input[type='image'] {
+  margin-top: .9em;
+}
+
+.modal-dialog .modal-body form {
+	text-align: right;
+}
+
+.modal-dialog select {
+	background-color: #101020;
+	width: 100%;
+}
+
 #ticket-success {
 	background-color: rgba(30,30,50,.8);
 }

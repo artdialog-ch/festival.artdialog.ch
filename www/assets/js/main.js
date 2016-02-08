@@ -2,11 +2,49 @@ function showTicketsModal() {
 	$('#TicketsModal').modal('show');
 }
 
+function getLang() {
+	var q = $('html[lang]');
+	return q.length ? q[0].lang : 'de'; 
+}
+
+var ticketATagSelector = 'a[href="#tickets"]';
+
+function getEventId(aTag) {
+	aTag = aTag || $(ticketATagSelector)[0];
+	return aTag.id.match(/buyAticket-(.+)/)[1];
+}
+
+function loadTicketsModal(eventId)
+{
+	if ($('#' + eventId).length) {
+		showTicketsModal();
+	}
+	else {
+		doLoadTicketsModal(eventId);
+	}
+}
+
+function doLoadTicketsModal(eventId)
+{
+	var lang = getLang();
+	var loadurl = "payment-popup.php?eventid=" + encodeURIComponent(eventId) + "&lang=" + encodeURIComponent(lang);
+	$("#TicketsModal").load(loadurl + "#" + eventId, function( response, status, xhr ) {
+	  if ( status != "error" ) {
+	  	showTicketsModal();	  	
+	  }
+	  else
+	  {
+	  	$("#ticket-cancel").removeClass("hidden");
+	  }
+	});	
+}
+
 $(document).ready(function() {
 	var hStr = location.hash;
+	getLang();
 
 	if (hStr.indexOf('tickets') >= 0) {
-		showTicketsModal();
+		loadTicketsModal(getEventId());
 	}
 	
 	var qStr = window.location.search.substring(1)  
@@ -17,12 +55,8 @@ $(document).ready(function() {
     $("#ticket-cancel").removeClass("hidden");        	
   }});
 
-$('a[href="#ticktes"]').click(function() {
-	showTicketsModal();
+$(ticketATagSelector).click(function() {
+	var eventId = getEventId(this);
+	loadTicketsModal(eventId);
 	return false;
 });
-
-/*
- * $(window).on('hashchange', function() { showTicketsModal(); });
- */
-
