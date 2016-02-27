@@ -1661,10 +1661,49 @@ li.top-double-space {
 	background-color: #0070D0;	
 }
 
-.modal-dialog .modal-content .modal-header button.close {
+.modal-dialog .modal-content .modal-header button.close,
+.alert a.close {
 	color: #EEE;
 }
 
 .modal-dialog .modal-content .modal-body .text-info {
 	color: white;
+}
+
+.modal-dialog .modal-body form table {
+	width: 100%;
+	text-align: left;
+}
+
+#paypal button
+.modal-dialog .modal-body form input[name='submit'], 
+.modal-dialog .modal-body form input[type='image'] {
+  margin-top: .9em;
+}
+
+.modal-dialog .modal-body form {
+	text-align: right;
+}
+
+.modal-dialog select {
+	background-color: #101020;
+	width: 100%;
+}
+
+#ticket-success {
+	background-color: rgba(30,30,50,.8);
+}
+
+#ticket-cancel {
+  background-color: rgba(90,30,30,.8);
+}
+
+.alert-info {
+	border: 1px solid #28d9c1;
+	color: #28d9c1;
+}
+
+.alert-error {
+  border: 1px solid rgb(150,40,40);
+  color: #00B8EE;
 }
