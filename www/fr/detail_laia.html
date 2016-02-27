@@ -131,11 +131,23 @@
                             </div>
                         </div>
                     </div>
+                    <div id="ticket-success" class="alert alert-info hidden">
+                      <div class="row">
+                         <div class="col-sm-12 text-justify"><a href="#" class="close" data-dismiss="alert">&times;</a>(FR)Sie habe erfolgreich bestellt und bezahlt.<br> 
+                         In Kurzem bekommen Sie eine Email.Wenn Sie keine Email inerhalb der nächsten 3 Stunden bekommen haben, 
+                         nehmen Sie bitte <a href="kontakt.html">kontakt</a> mit uns: 555-555</div>
+                      </div>
+                    </div>
+                    <div id="ticket-cancel" class="alert alert-error hidden">
+                      <div class="row">
+                         <div class="col-sm-12"><a href="#" class="close" data-dismiss="alert">&times;</a>(FR)Sie haben die Bestellung abgebrochen oder nicht bezahlt.</div>
+                      </div>
+                    </div>                        
                     <div class="row">
                         <div class="col-sm-7"></div>
                         <div class="col-sm-5">
                             <ul class="options">
-								<li class="tickets"><a href="..." target="_blank">Tickets</a></li>
+								                <li class="tickets"><a id="buyAticket-LFGB2605" href="#tickets">Tickets</a></li>
                                 <li class="ort"><a href="https://www.google.com/maps/place/Aarbergstrasse+54,+2503+Biel%2FBienne,+Switzerland/@47.1312143,7.2398694,17z/data=!3m1!4b1!4m2!3m1!1s0x478e195a8b8793f1:0x7357ddec17b6a6c6?hl=fr" class="popup-gmaps">Lieu</a></li>
                                 <li class="zuruck"><a href="programm.html">Retour</a></li>
                             </ul>
@@ -291,6 +303,7 @@
                 <p>Designed by: <a href="http://golive-design.com/de-home.html">green olive design</a></p>
             </div>
         </div>
+        <div id="TicketsModal" class="modal fade"></div>
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script>
@@ -301,6 +314,7 @@
     <script src="../assets/plugins/magnific-popup/dist/jquery.magnific-popup.js"></script>
     <script src="../assets/plugins/owl-carousel/owl.carousel.js"></script>
     <script src="../assets/js/plugins.js"></script>
+    <script src="../assets/js/main.js"></script>
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
