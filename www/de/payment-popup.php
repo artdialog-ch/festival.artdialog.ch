@@ -21,11 +21,11 @@ require '../ppbuttons.php';
 			</div>
 			<div class="modal-body">
 				<p class="text-info">
-				Auf unserer Website können Sie ein E-Ticket bestellen. Das E-Ticket wird an Ihre E-Mail-Adresse gesendet und Sie können das E-Ticket auf Ihr Smartphone oder Tablett laden oder auf Papier ausdrucken.
-Die Bezahlung erfolgt per Kreditkarte oder mit Ihrem PayPal-Konto. Die Anzahl der gewünschten Karten in der ausgewählten Kategorie können Sie erst bei der Zahlung angeben.
-Sichere Zahlung per Kreditkarte über Zahlungssystem PayPal (PayPal-Konto optional).
-Für die Zahlung werden Sie auf die Website des Finanzinstituts umgeleitet. Nach Eingang der Zahlung wird Ihnen Ihr E-Ticket innerhalb einer Stunde per E-Mail zugestellt.
-Wenn Sie ein E-Ticket nicht erhalten oder Sie Schwierigkeiten bei der Bezahlung oder andere Fragen haben, kontaktieren Sie uns bitte per Telefon, email oder Kontaktformular.				
+				Auf unserer Website können Sie ein E-Ticket bestellen.<br>Das E-Ticket wird an Ihre E-Mail-Adresse gesendet und Sie können das E-Ticket auf Ihr Smartphone oder Tablett 
+				laden oder auf Papier ausdrucken. Die Bezahlung erfolgt per Kreditkarte oder mit Ihrem PayPal-Konto. Die Anzahl der gewünschten Karten in der ausgewählten Kategorie 
+				können Sie erst bei der Zahlung angeben. Sichere Zahlung per Kreditkarte über Zahlungssystem PayPal (PayPal-Konto optional). Für die Zahlung werden Sie auf die Website 
+				des Finanzinstituts umgeleitet. Nach Eingang der Zahlung wird Ihnen Ihr E-Ticket innerhalb einer Stunde per E-Mail zugestellt.<br>Wenn Sie ein E-Ticket nicht erhalten oder 
+				Sie Schwierigkeiten bei der Bezahlung oder andere Fragen haben, kontaktieren Sie uns bitte per Telefon: 079 730 41 31 oder <a href="kontakt.html">Kontaktformular</a>.				
 				</p>
 				<p>
 					<?php echo $btn_html ?>
