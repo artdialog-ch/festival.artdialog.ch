@@ -9,7 +9,7 @@ $btns_de = array(
 	'KIMO0306' => 'VQB6S3TU2QMYQ',	
 	'BABI2105' => '44TNYGCRNXSRL',
 	'RANE2205' => 'UTX7N7FYR89DW',
-	'PUBI0506' => 'YB7JXQGRVU862',
+	'PUBI0406' => 'YB7JXQGRVU862',
 );
 
 $btns_fr = array(
@@ -22,7 +22,7 @@ $btns_fr = array(
 	'KIMO0306' => '8EFMH25PZVJTE',
 	'BABI2105' => 'ME7P8TA5YA67A',
 	'RANE2205' => 'G6R4YRHNKCS5C',
-	'PUBI0506' => '8P655RDN36YV2',
+	'PUBI0406' => '8P655RDN36YV2',
 );
 
 $btn_data = array(
