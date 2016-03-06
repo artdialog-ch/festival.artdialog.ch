@@ -2,10 +2,12 @@
 $debug = $_GET["debug"];
 $prod = $_SERVER["SERVER_NAME"] === 'festival.artdialog.ch';
 
+/*
 if ($debug) {
 	error_reporting(E_ALL);
 	ini_set('display_errors', '1');
 }
+*/
 
 function getPpButtonDetailsFromRequest() {
 	$res = array();
