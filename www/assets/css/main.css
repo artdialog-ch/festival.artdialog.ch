@@ -33,7 +33,7 @@ p {
 }
 
 a {
-    color: #00b8ee;	
+    color: #00b8ee;
 	outline: 0;
 }
 a:hover, a:active, a:focus {
@@ -102,32 +102,32 @@ a:hover {
 
 .btn.btn-primary {
     /*   background: url(../img/bg-btn.jpg) repeat-x center top;*/
-    
+
     background: -webkit-linear-gradient(#28d9c1, #00b8ee);
     /* For Safari 5.1 to 6.0 */
-    
+
     background: -o-linear-gradient(#28d9c1, #00b8ee);
     /* For Opera 11.1 to 12.0 */
-    
+
     background: -moz-linear-gradient(#28d9c1, #00b8ee);
     /* For Firefox 3.6 to 15 */
-    
+
     background: linear-gradient(#28d9c1, #00b8ee);
     /* Standard syntax (must be last) */
 }
 
 .btn.btn-primary:hover {
     /*   background: url(../img/bg-btn.jpg) repeat-x center top;*/
-    
+
     background: -webkit-linear-gradient(#00b8ee, #28d9c1);
     /* For Safari 5.1 to 6.0 */
-    
+
     background: -o-linear-gradient(#00b8ee, #28d9c1);
     /* For Opera 11.1 to 12.0 */
-    
+
     background: -moz-linear-gradient(#00b8ee, #28d9c1);
     /* For Firefox 3.6 to 15 */
-    
+
     background: linear-gradient(#00b8ee, #28d9c1);
     /* Standard syntax (must be last) */
 }
@@ -264,7 +264,7 @@ span.turquoise {
 
 span.violet {
     /*color: #009dde;*/
-    
+
     color: #28d9c1;
 }
 
@@ -306,10 +306,10 @@ ul.language li {
     display: block;
 	float:left;
     padding: 0;
-    
+
 }
 
-ul.language li a, ul.language li span {  
+ul.language li a, ul.language li span {
 	position:relative;
     display: block;
     width: 40px;
@@ -321,7 +321,7 @@ ul.language li a, ul.language li span {
     font-size: 19px;
 	padding-top:0px;
 	z-index:5;
-	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);	
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
 	transition: all 0.2s ease-in-out 0s;
 }
@@ -346,7 +346,7 @@ html:lang(de) ul.language li > span, ul.language li > a[hreflang='de'] {
 
 html:lang(fr) ul.language li > span, ul.language li > a[hreflang='fr'] {
     background: #28d9c1;
-	box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
+	   box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 /* ==================
@@ -607,8 +607,8 @@ div.cards h3 {
 /* ==================
    Gallery
    ================== */
- 
-   
+
+
 ul.year-pager {
     padding: 0;
     list-style: none;
@@ -1098,8 +1098,8 @@ footer div.copyright {
     height: 100px;
     vertical-align: top;
 }
-input::-moz-focus-inner { 
-  border: 0; 
+input::-moz-focus-inner {
+  border: 0;
 }
 
 div.fancy-select {
@@ -1212,7 +1212,7 @@ div.fancy-select {
 .focuspoint {
     position: relative;
     /*Any position but static should work*/
-    
+
     overflow: hidden;
 }
 
@@ -1223,7 +1223,7 @@ div.fancy-select {
     margin: 0;
     display: block;
     /* fill and maintain aspect ratio */
-    
+
     width: auto;
     height: auto;
     min-width: 100%;
@@ -1255,9 +1255,9 @@ div.fancy-select {
 }
 
 .owl-controls .owl-dots .owl-dot{
-	display: inline-block;	
+	display: inline-block;
 }
-.owl-controls .owl-dots .owl-dot.active span, 
+.owl-controls .owl-dots .owl-dot.active span,
 .owl-controls .owl-dots .owl-dot:hover  span{
 	background:#28d9c1;
 }
@@ -1282,7 +1282,7 @@ div.fancy-select {
 	display: inline-block;
 }
 
-/* */ 
+/* */
 
 .menu-2{
 	text-align:right;
@@ -1322,7 +1322,7 @@ div.fancy-select {
 }
 
 
-/* Art category a tagline color*/ 
+/* Art category a tagline color*/
 
 .recital span.turquoise {
   color: #09e3d1;
@@ -1333,7 +1333,7 @@ div.fancy-select {
 }
 
 
-	
+
 
 /* */
 
@@ -1343,7 +1343,7 @@ div.fancy-select {
 	.detail div.date {
 		height: 120px;
 	}
-	
+
 	.detail div.day {
 		font-size: 40px;
 		line-height: 50px;
@@ -1353,11 +1353,11 @@ div.fancy-select {
 		max-height: 120px;
 		padding-top: 10px;
 	}
-	
+
 	.detail div.day span.digits {
 		font-size:44px;
 	}
-	
+
 	.detail div.place {
 		display: inline-block;
 		width: 100%;
@@ -1366,19 +1366,19 @@ div.fancy-select {
 		line-height: 45px;
 		text-align: left;
 	}
-	
-	
+
+
 	.detail .title {
 		display: inline-block;
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 28px;
 		width: 100%;
-		text-align: left;		
+		text-align: left;
 		float: none;
 		margin: 20px 0px;
 	}
-	
+
 	.menu-2 {
 		margin-top: 20px;
 		text-align: right;
@@ -1386,7 +1386,7 @@ div.fancy-select {
 		width: 100%;
 		font-size: 18px;
 	}
-	
+
 	.tagline {
 		position: absolute;
 		top: 100px;
@@ -1396,7 +1396,7 @@ div.fancy-select {
 		font-size: 50px;
 		padding: 0;
 	}
-	
+
 
 }
 
@@ -1406,7 +1406,7 @@ div.fancy-select {
 	.detail div.date {
 		height: 120px;
 	}
-	
+
 	.detail div.day {
 		font-size: 40px;
 		line-height: 50px;
@@ -1416,11 +1416,11 @@ div.fancy-select {
 		max-height: 120px;
 		padding-top: 10px;
 	}
-	
+
 	.detail div.day span.digits {
 		font-size:44px;
 	}
-	
+
 	.detail div.place {
 		display: inline-block;
 		width: 100%;
@@ -1429,19 +1429,19 @@ div.fancy-select {
 		line-height: 45px;
 		text-align: left;
 	}
-	
-	
+
+
 	.detail .title {
 		display: inline-block;
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 28px;
 		width: 100%;
-		text-align: left;		
+		text-align: left;
 		float: none;
 		margin: 20px 0px;
 	}
-	
+
 	.menu-2 {
 		margin-top: 20px;
 		text-align: right;
@@ -1449,30 +1449,30 @@ div.fancy-select {
 		width: 100%;
 		font-size: 18px;
 	}
-	
+
 	.tagline {
 		position: absolute;
 		top: 80px;
-		left: 0;		
-		height: 160px;
-		font-size: 34px;
-		padding: 0;
-	}	
-	.front .tagline {
-		position: absolute;
-		top: 40px;
-		left: 0;		
+		left: 0;
 		height: 160px;
 		font-size: 34px;
 		padding: 0;
 	}
-	
+	.front .tagline {
+		position: absolute;
+		top: 40px;
+		left: 0;
+		height: 160px;
+		font-size: 34px;
+		padding: 0;
+	}
+
 #gallery .row>div{
 
 width:30%;
 
 }
-	
+
 
 }
 
@@ -1483,7 +1483,7 @@ width:30%;
 		min-height: 90px;
 		max-height: 120px;
 	}
-	
+
 	.detail div.day {
 		font-size: 32px;
 		line-height: 36px;
@@ -1493,11 +1493,11 @@ width:30%;
 		max-height: 120px;
 		padding-top: 10px;
 	}
-	
+
 	.detail div.day span.digits {
 		font-size:35px;
 	}
-	
+
 	.detail div.place {
 		display: inline-block;
 		width: 100%;
@@ -1506,19 +1506,19 @@ width:30%;
 		line-height: 28px;
 		text-align: center;
 	}
-	
-	
+
+
 	.detail .title {
 		display: inline-block;
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 28px;
 		width: 100%;
-		text-align: center;		
+		text-align: center;
 		float: none;
 		margin: 20px 0px;
 	}
-	
+
 	.menu-2 {
 		margin-top: 20px;
 		text-align: center;
@@ -1526,11 +1526,11 @@ width:30%;
 		width: 100%;
 		font-size: 18px;
 	}
-	
+
 	h1, .h1 , h2, .h2 {
 		font-size: 30px;
 	}
-	
+
 	.tagline {
 		font-size: 40px;
 		padding: 60px 0 30px 0px;
@@ -1539,8 +1539,8 @@ width:30%;
 
 width:50%;
 
-}	
-	
+}
+
 
 }
 
@@ -1552,7 +1552,7 @@ width:50%;
 		min-height: 75px;
 		max-height: 120px;
 	}
-	
+
 	.detail div.day {
 		font-size:26px;
 		line-height: 28px;
@@ -1560,11 +1560,11 @@ width:50%;
 		height: 75px;
 		padding-top: 10px;
 	}
-	
+
 	.detail div.day span.digits {
 		font-size:26px;
 	}
-	
+
 	.detail div.place {
 		display:inline-block;
 		width:100%;
@@ -1573,43 +1573,43 @@ width:50%;
 		line-height: 20px;
 		text-align: center;
 	}
-	
-	
+
+
 	.detail .title {
 		display: inline-block;
 		font-size: 16px;
 		font-weight: 500;
 		line-height: 18px;
 		width: 100%;
-		text-align: center;		
+		text-align: center;
 		float: none;
 		margin: 20px 0px;
 	}
-	
+
 	.menu-2 {
 		text-align: center;
 		display: inline-block;
 		width: 100%;
 		font-size: 15px;
 	}
-	
+
 	a.wine {
 		line-height: 22px;
 	}
-	
+
 	h1, .h1 , h2, .h2 {
 		font-size: 18px;
 	}
-	
+
 	.detail .artist p {
 		font-size: 14px;
 	}
-	
+
 	.tagline {
 		font-size: 28px;
 		padding: 60px 0 30px 0px;
 	}
-		
+
 }
 
 a.img-link{
@@ -1653,12 +1653,12 @@ li.top-double-space {
 }
 
 .modal-dialog .modal-content {
-	background-color: rgb(30,30,30); 
+	background-color: rgb(30,30,30);
 	border-color: #00b8ee;
 }
 
 .modal-dialog .modal-content .modal-header {
-	background-color: #0070D0;	
+	background-color: #0070D0;
 }
 
 .modal-dialog .modal-content .modal-header button.close,
@@ -1676,7 +1676,7 @@ li.top-double-space {
 }
 
 #paypal button
-.modal-dialog .modal-body form input[name='submit'], 
+.modal-dialog .modal-body form input[name='submit'],
 .modal-dialog .modal-body form input[type='image'] {
   margin-top: .9em;
 }
