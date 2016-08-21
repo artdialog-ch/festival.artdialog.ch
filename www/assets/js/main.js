@@ -75,6 +75,8 @@ $( document ).ready(function() {
 				if (/detail_.+/.test(filename)) filename = "programm.html"
 
 				$("a[href='" + filename + "']").parent().addClass("active")
+
+				if (initOwlCarousel) initOwlCarousel();
 			});
 		}
 });
