@@ -29,7 +29,7 @@ require '../ppbuttons.php';
 				nombre de billets désirés dans la catégorie choisie qu’au moment du paiement. Paiement sécurisé par carte de crédit grâce au paiement en ligne PayPal (compte PayPal 
 				facultatif). Pour le paiement, vous serez redirigé vers le site Internet de l’établissement financier. Après réception du paiement, votre e-billet vous sera envoyé par 
 				e-mail dans l’heure qui suit.<br>Si vous ne recevez pas un e-billet commandé ou rencontrez des difficultés au moment du paiement, ou encore si vous avez d’autres questions,
-				veuillez nous contacter par téléphone : 079 730 41 31 ou par <a href="kontakt.html">e-mail</a>.
+				veuillez nous contacter par téléphone : 076 365 53 16 ou par <a href="kontakt.html">e-mail</a>.
 				</p>
 				<p>
 					<?php echo $btn_html ?>
