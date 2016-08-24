@@ -349,6 +349,10 @@ html:lang(fr) ul.language li > span, ul.language li > a[hreflang='fr'] {
 	   box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
+html:lang(en) ul.language li > span, ul.language li > a[hreflang='en'] {
+    background: #188273
+}
+
 /* ==================
    Front
    ================== */
