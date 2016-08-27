@@ -288,6 +288,10 @@ span.magenta {
     color: #d21685;
 }
 
+span.magenta-dark {
+    color: #9E1F63;
+}
+
 header .container {
     position: relative;
 }
