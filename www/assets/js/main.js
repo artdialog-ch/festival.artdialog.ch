@@ -79,4 +79,13 @@ $( document ).ready(function() {
 				if (initOwlCarousel) initOwlCarousel();
 			});
 		}
+
+		var footer = $('body > footer')
+		if (footer.length > 0)
+		{
+			//alert($('footer > *').first();
+			footer.load("partial/footer.html footer", function() {
+				$(this).children(':first').unwrap();
+			});
+		}
 });
