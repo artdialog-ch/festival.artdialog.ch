@@ -21,7 +21,7 @@ h3 {
 }
 
 h2 {
-    color: #28d9c1;
+    color: #ed145b;
     font-weight: 700;
     text-transform: none;
     font-size: 36px;
@@ -33,7 +33,7 @@ p {
 }
 
 a {
-    color: #00b8ee;
+    color: #f7941d;
 	outline: 0;
 }
 a:hover, a:active, a:focus {
@@ -42,7 +42,7 @@ a:hover, a:active, a:focus {
 }
 
 a:hover {
-    color: #28d9c1;
+    color: #f7941d;
     text-decoration: none;
 }
 
@@ -103,32 +103,32 @@ a:hover {
 .btn.btn-primary {
     /*   background: url(../img/bg-btn.jpg) repeat-x center top;*/
 
-    background: -webkit-linear-gradient(#28d9c1, #00b8ee);
+    background: -webkit-linear-gradient(#af1444, #ed145b);
     /* For Safari 5.1 to 6.0 */
 
-    background: -o-linear-gradient(#28d9c1, #00b8ee);
+    background: -o-linear-gradient(#af1444, #ed145b);
     /* For Opera 11.1 to 12.0 */
 
-    background: -moz-linear-gradient(#28d9c1, #00b8ee);
+    background: -moz-linear-gradient(#af1444, #ed145b);
     /* For Firefox 3.6 to 15 */
 
-    background: linear-gradient(#28d9c1, #00b8ee);
+    background: linear-gradient(#af1444, #ed145b);
     /* Standard syntax (must be last) */
 }
 
 .btn.btn-primary:hover {
     /*   background: url(../img/bg-btn.jpg) repeat-x center top;*/
 
-    background: -webkit-linear-gradient(#00b8ee, #28d9c1);
+    background: -webkit-linear-gradient(#ed145b, #af1444);
     /* For Safari 5.1 to 6.0 */
 
-    background: -o-linear-gradient(#00b8ee, #28d9c1);
+    background: -o-linear-gradient(#ed145b, #af1444);
     /* For Opera 11.1 to 12.0 */
 
-    background: -moz-linear-gradient(#00b8ee, #28d9c1);
+    background: -moz-linear-gradient(#ed145b, #af1444);
     /* For Firefox 3.6 to 15 */
 
-    background: linear-gradient(#00b8ee, #28d9c1);
+    background: linear-gradient(#ed145b, #af1444);
     /* Standard syntax (must be last) */
 }
 
@@ -178,7 +178,7 @@ ul.fancy-list li {
 
 .navbar-default .navbar-nav > li > a {
     text-transform: uppercase;
-    color: #00b8ee;
+    color: #ed145b;
     font-size: 24px;
     line-height: 26px;
     padding: 3px 0;
@@ -187,14 +187,14 @@ ul.fancy-list li {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #28d9c1;
+    color: #f7941d;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .active > a {
     background: transparent;
     box-shadow: none;
-    color: #28d9c1;
+    color: #f7941d;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -255,7 +255,7 @@ span.heavy {
 }
 
 span.blue {
-    color: #00b8ee;
+    color: #ed145b;
 }
 
 span.turquoise {
@@ -265,7 +265,7 @@ span.turquoise {
 span.violet {
     /*color: #009dde;*/
 
-    color: #28d9c1;
+    color: #da1e48;
 }
 
 span.lime {
@@ -344,17 +344,17 @@ ul.language li > span {
 }
 
 html:lang(de) ul.language li > span, ul.language li > a[hreflang='de'] {
-    background: #00b8ee;
+    background: #ed145b;
     margin-right: -3px;
 }
 
 html:lang(fr) ul.language li > span, ul.language li > a[hreflang='fr'] {
-    background: #28d9c1;
+    background: #af1444;
 	   box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 html:lang(en) ul.language li > span, ul.language li > a[hreflang='en'] {
-    background: #188273
+    background: #f7941d; 
 }
 
 /* ==================
@@ -474,11 +474,11 @@ span.art.green {
 
 span.art.purple,
 p.purple {
-    color: #28d9c1;
+    color: #da1e48;
 }
 
 span.art.blue {
-    color: #00b8ee;
+    color: #ed145b;
 }
 
 span.art.aqua {
@@ -506,7 +506,7 @@ span.art.aqua {
 .calendar-item .type {
     font-size: 18px;
     font-weight: 700;
-    color: #00a8e9;
+    color: #ed145b;
 }
 
 h2.cal {
@@ -587,19 +587,19 @@ div.cards h3 {
     font-size: 20px;
     font-weight: 700;
     text-transform: none;
-    color: #00A8E9;
+    color: #ed145b;
     margin: 0 0 5px 0;
 }
 
 .location-item a {
     display: block;
-    color: #00A8E9;
+    color: #ed145b;
     font-size: 16px;
     font-weight: 500;
 }
 
 .location-item a:hover {
-    color: #28d9c1;
+    color: #f7941d;
     text-decoration: none;
 }
 
@@ -636,7 +636,7 @@ ul.year-pager li a {
 
 ul.year-pager a.active,
 ul.pager a.active {
-    color: #28d9c1;
+    color: #f7941d;
     text-decoration: underline;
 }
 
@@ -790,7 +790,7 @@ span.art.orange {
 
 span.tickets {
     display: block;
-    color: #00a8e9;
+    color: #ed145b;
     margin-top: 10px;
     font-size: 16px;
     font-weight: 500;
@@ -830,7 +830,7 @@ ul.patrons span {
 
 .contact address span {
     font-weight: 700;
-    color: #28d9c1;
+    color: #ed145b;
 }
 
 address {
@@ -842,7 +842,7 @@ address {
 
 .detail div.date {
     position: relative;
-    border: 1px solid #2487b3;
+    border: 1px solid #ed145b;
     overflow: hidden;
     margin-bottom: 20px;
     width: 100%;
@@ -878,7 +878,7 @@ address {
 
 ul.options {
     padding: 0;
-    color: #00b8ee;
+    color: #ed145b;
 }
 
 ul.options li {
@@ -912,7 +912,7 @@ ul.options li.zuruck {
 }
 
 .detail .program-item h2 {
-    color: #28d9c1;
+    color: #ed145b;
     padding: 0;
     margin: 0;
     font-size: 26px;
@@ -928,7 +928,7 @@ ul.options li.zuruck {
 }
 
 .detail .program-item .left span.link {
-    color: #00b8ee;
+    color: #ed145b;
 }
 
 .detail span.link {
@@ -938,7 +938,7 @@ ul.options li.zuruck {
 .detail .title {
 	display: inline-block;
     text-transform: uppercase;
-    color: #00b8ee;
+    color: #ed145b;
     font-size: 24px;
     font-weight: 500;
 	line-height: 24px;
@@ -948,12 +948,12 @@ ul.options li.zuruck {
 
 .detail .artist h1 {
     padding-left: 15px;
-    color: #28d9c1;
+    color: #ed145b;
     text-transform: none;
 }
 .detail .artist h2 {
     padding-left: 15px;
-    color: #28d9c1;
+    color: #ed145b;
     text-transform: none;
 }
 
@@ -964,7 +964,7 @@ ul.options li.zuruck {
 
 a.wine {
     display: block;
-    color: #00b8ee;
+    color: #ed145b;
     font-size: 16px;
     line-height: 50px;
     padding-left: 50px;
@@ -972,7 +972,7 @@ a.wine {
 }
 
 a.wine:hover {
-    color: #28d9c1;
+    color: #f7941d;
     text-decoration: none;
 }
 
@@ -1015,7 +1015,7 @@ footer a.top {
 }
 
 footer h2 {
-    color: #28d9c1;
+    color: #af1444;
     font-size: 18px;
     padding-bottom: 30px;
     text-transform: uppercase;
@@ -1034,7 +1034,7 @@ footer ul.ftr-menu li {
 }
 
 footer ul.ftr-menu li a {
-    color: #fff;
+    color: #f7941d;
     font-weight: 400;
 }
 
@@ -1056,7 +1056,7 @@ footer div.about p {
 footer div.copyright {
     padding-top: 10px;
     text-align: center;
-    color: #00a8e9;
+    color: #af1444;
     margin-bottom: 20px;
 }
 
@@ -1074,9 +1074,9 @@ footer div.copyright {
 
 .form-control {
     background: transparent;
-    border: 1px solid #0099ff;
+    border: 1px solid #ed145b;
     border-radius: 0;
-    color: #0099ff;
+    color: #ffffff;
     height: auto;
 }
 
@@ -1087,15 +1087,15 @@ footer div.copyright {
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #0099ff;
+    color: #ffffff;
 }
 
 .form-control:-moz-placeholder {
-    color: #0099ff;
+    color: #ffffff;
 }
 
 .form-control::-moz-placeholder {
-    color: #0099ff;
+    color: #ffffff;
 }
 
 .form-control:-ms-input-placeholder {
@@ -1130,7 +1130,7 @@ div.fancy-select {
     background: transparent;
     font-size: 24px;
     font-weight: 700;
-    color: #28d9c1;
+    color: #ed145b;
     border: none;
     outline: none;
 }
@@ -1142,7 +1142,7 @@ div.fancy-select {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    color: #28d9c1;
+    color: #ed145b;
     background-color: transparent;
     border-color: transparent;
     border: none;
@@ -1208,7 +1208,7 @@ div.fancy-select {
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-    color: #28d9c1;
+    color: #f7941d;
     text-decoration: none;
     background-color: transparent;
     border: none;
@@ -1267,7 +1267,7 @@ div.fancy-select {
 }
 .owl-controls .owl-dots .owl-dot.active span,
 .owl-controls .owl-dots .owl-dot:hover  span{
-	background:#28d9c1;
+	background:#f7941d;
 }
 .owl-controls .owl-dots .owl-dot span{
 	width: 10px;
@@ -1337,7 +1337,7 @@ div.fancy-select {
 }
 
 .kunst span.turquoise {
-	color: #28d9c1;
+	color: #da1e48;
 }
 
 
@@ -1662,7 +1662,7 @@ li.top-double-space {
 
 .modal-dialog .modal-content {
 	background-color: rgb(30,30,30);
-	border-color: #00b8ee;
+	border-color: #ed145b;
 }
 
 .modal-dialog .modal-content .modal-header {
@@ -1707,11 +1707,11 @@ li.top-double-space {
 }
 
 .alert-info {
-	border: 1px solid #28d9c1;
-	color: #28d9c1;
+	border: 1px solid #ed145b;
+	color: #ed145b;
 }
 
 .alert-error {
   border: 1px solid rgb(150,40,40);
-  color: #00B8EE;
+  color: #ed145b;
 }
