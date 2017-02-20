@@ -202,6 +202,7 @@ ul.fancy-list li {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
     background: none;
+	color: #9b5a0c;
 }
 
 .navbar-default .navbar-header {
