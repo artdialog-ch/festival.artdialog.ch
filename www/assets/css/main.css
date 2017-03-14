@@ -21,7 +21,7 @@ h3 {
 }
 
 h2 {
-    color: #ed145b;
+    color: #af50c3;
     font-weight: 700;
     text-transform: none;
     font-size: 36px;
@@ -33,7 +33,7 @@ p {
 }
 
 a {
-    color: #f7941d;
+    color: #2DA8DF;
 	outline: 0;
 }
 a:hover, a:active, a:focus {
@@ -42,7 +42,7 @@ a:hover, a:active, a:focus {
 }
 
 a:hover {
-    color: #f7941d;
+    color: #AF50C3;
     text-decoration: none;
 }
 
@@ -103,32 +103,32 @@ a:hover {
 .btn.btn-primary {
     /*   background: url(../img/bg-btn.jpg) repeat-x center top;*/
 
-    background: -webkit-linear-gradient(#af1444, #ed145b);
+    background: -webkit-linear-gradient(#28d9c1, #00b8ee);
     /* For Safari 5.1 to 6.0 */
 
-    background: -o-linear-gradient(#af1444, #ed145b);
+    background: -o-linear-gradient(#1b4693, #5d2b6b);
     /* For Opera 11.1 to 12.0 */
-
-    background: -moz-linear-gradient(#af1444, #ed145b);
+    
+    background: -moz-linear-gradient(#1b4693, #5d2b6b);
     /* For Firefox 3.6 to 15 */
-
-    background: linear-gradient(#af1444, #ed145b);
+    
+    background: linear-gradient(#1b4693, #5d2b6b);
     /* Standard syntax (must be last) */
 }
 
 .btn.btn-primary:hover {
     /*   background: url(../img/bg-btn.jpg) repeat-x center top;*/
 
-    background: -webkit-linear-gradient(#ed145b, #af1444);
+    background: -webkit-linear-gradient(#5d2b6b, #1b4693);
     /* For Safari 5.1 to 6.0 */
-
-    background: -o-linear-gradient(#ed145b, #af1444);
+    
+    background: -o-linear-gradient(#5d2b6b, #1b4693);
     /* For Opera 11.1 to 12.0 */
-
-    background: -moz-linear-gradient(#ed145b, #af1444);
+    
+    background: -moz-linear-gradient(#5d2b6b, #1b4693);
     /* For Firefox 3.6 to 15 */
-
-    background: linear-gradient(#ed145b, #af1444);
+    
+    background: linear-gradient(#5d2b6b, #1b4693);
     /* Standard syntax (must be last) */
 }
 
@@ -178,7 +178,7 @@ ul.fancy-list li {
 
 .navbar-default .navbar-nav > li > a {
     text-transform: uppercase;
-    color: #ed145b;
+    color: #2da8df;
     font-size: 24px;
     line-height: 26px;
     padding: 3px 0;
@@ -187,14 +187,14 @@ ul.fancy-list li {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-    color: #f7941d;
+    color: #AF50C3;
 }
 
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .active > a {
     background: transparent;
     box-shadow: none;
-    color: #f7941d;
+    color: #af50c3;
 }
 
 .navbar-default .navbar-nav > .active > a,
@@ -255,7 +255,11 @@ span.heavy {
 }
 
 span.blue {
-    color: #00b8ee;
+    color: #2da8df;
+}
+
+span.blue-dark {
+    color: #3a66a8;
 }
 
 span.turquoise {
@@ -265,7 +269,7 @@ span.turquoise {
 span.violet {
     /*color: #009dde;*/
 
-    color: #28d9c1;
+    color: #AF50C3;
 }
 
 span.lime {
@@ -290,6 +294,14 @@ span.magenta {
 
 span.magenta-dark {
     color: #9E1F63;
+}
+
+span.red {
+    color: #ea1d25;
+}
+
+span.green {
+	color: #5af10f;
 }
 
 header .container {
@@ -344,17 +356,17 @@ ul.language li > span {
 }
 
 html:lang(de) ul.language li > span, ul.language li > a[hreflang='de'] {
-    background: #ed145b;
+    background: #2da8df;
     margin-right: -3px;
 }
 
 html:lang(fr) ul.language li > span, ul.language li > a[hreflang='fr'] {
-    background: #af1444;
+    background: #af50c3;
 	   box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 html:lang(en) ul.language li > span, ul.language li > a[hreflang='en'] {
-    background: #f7941d; 
+    background: #732db5
 }
 
 /* ==================
@@ -474,7 +486,7 @@ span.art.green {
 
 span.art.purple,
 p.purple {
-    color: #da1e48;
+    color: #d256fb;
 }
 
 span.art.blue {
@@ -506,7 +518,7 @@ span.art.aqua {
 .calendar-item .type {
     font-size: 18px;
     font-weight: 700;
-    color: #ed145b;
+    color: #00a8e9;
 }
 
 h2.cal {
@@ -587,19 +599,19 @@ div.cards h3 {
     font-size: 20px;
     font-weight: 700;
     text-transform: none;
-    color: #ed145b;
+    color: #00A8E9;
     margin: 0 0 5px 0;
 }
 
 .location-item a {
     display: block;
-    color: #ed145b;
+    color: #00A8E9;
     font-size: 16px;
     font-weight: 500;
 }
 
 .location-item a:hover {
-    color: #f7941d;
+    color: #AF50C3
     text-decoration: none;
 }
 
@@ -636,7 +648,7 @@ ul.year-pager li a {
 
 ul.year-pager a.active,
 ul.pager a.active {
-    color: #f7941d;
+    color: #af50c3;
     text-decoration: underline;
 }
 
@@ -790,11 +802,13 @@ span.art.orange {
 
 span.tickets {
     display: block;
-    color: #ed145b;
+    color: #00a8e9;
     margin-top: 10px;
     font-size: 16px;
     font-weight: 500;
 }
+
+
 /* ==================
    Sponsers
    ================== */
@@ -830,7 +844,7 @@ ul.patrons span {
 
 .contact address span {
     font-weight: 700;
-    color: #ed145b;
+    color: #AF50C3;
 }
 
 address {
@@ -842,7 +856,7 @@ address {
 
 .detail div.date {
     position: relative;
-    border: 1px solid #ed145b;
+    border: 1px solid #2487b3;
     overflow: hidden;
     margin-bottom: 20px;
     width: 100%;
@@ -863,6 +877,34 @@ address {
     text-transform: uppercase;
 }
 
+.detail div.day-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 120px;
+    height: 120px;
+    padding-top: 20px;
+    background: url(../img/bg-date-2.jpg);
+	text-align: center;
+	font-size: 30px;
+    line-height: 30px;
+	text-transform: uppercase;
+}
+
+.detail div.day-2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110px;
+    height: 120px;
+    padding-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+	height: 100%;
+    text-transform: uppercase;
+}
+
 .detail div.day span.digits {
     font-weight: 400;
     font-size: 60px;
@@ -876,9 +918,16 @@ address {
     line-height: 46px;
 }
 
+.detail div.place-1 {
+    float: left;
+    padding: 15px 0 5px 150px;
+    font-size: 15px;
+    line-height: 25px;
+}
+
 ul.options {
     padding: 0;
-    color: #ed145b;
+    color: #2da8df;
 }
 
 ul.options li {
@@ -912,7 +961,7 @@ ul.options li.zuruck {
 }
 
 .detail .program-item h2 {
-    color: #ed145b;
+    color: #af50c3;
     padding: 0;
     margin: 0;
     font-size: 26px;
@@ -928,7 +977,7 @@ ul.options li.zuruck {
 }
 
 .detail .program-item .left span.link {
-    color: #ed145b;
+    color: #2da8df;
 }
 
 .detail span.link {
@@ -938,7 +987,7 @@ ul.options li.zuruck {
 .detail .title {
 	display: inline-block;
     text-transform: uppercase;
-    color: #ed145b;
+    color: #2da8df;
     font-size: 24px;
     font-weight: 500;
 	line-height: 24px;
@@ -948,12 +997,12 @@ ul.options li.zuruck {
 
 .detail .artist h1 {
     padding-left: 15px;
-    color: #ed145b;
+    color: #af50c3;
     text-transform: none;
 }
 .detail .artist h2 {
     padding-left: 15px;
-    color: #ed145b;
+    color: #af50c3;
     text-transform: none;
 }
 
@@ -964,7 +1013,7 @@ ul.options li.zuruck {
 
 a.wine {
     display: block;
-    color: #ed145b;
+    color: #2da8df;
     font-size: 16px;
     line-height: 50px;
     padding-left: 50px;
@@ -972,7 +1021,7 @@ a.wine {
 }
 
 a.wine:hover {
-    color: #f7941d;
+    color: #AF50C3;
     text-decoration: none;
 }
 
@@ -1015,7 +1064,7 @@ footer a.top {
 }
 
 footer h2 {
-    color: #af1444;
+    color: #af50c3;
     font-size: 18px;
     padding-bottom: 30px;
     text-transform: uppercase;
@@ -1034,7 +1083,7 @@ footer ul.ftr-menu li {
 }
 
 footer ul.ftr-menu li a {
-    color: #f7941d;
+    color: #fff;
     font-weight: 400;
 }
 
@@ -1056,7 +1105,7 @@ footer div.about p {
 footer div.copyright {
     padding-top: 10px;
     text-align: center;
-    color: #af1444;
+    color: #00a8e9;
     margin-bottom: 20px;
 }
 
@@ -1074,9 +1123,9 @@ footer div.copyright {
 
 .form-control {
     background: transparent;
-    border: 1px solid #ed145b;
+    border: 1px solid #0099ff;
     border-radius: 0;
-    color: #ffffff;
+    color: #0099ff;
     height: auto;
 }
 
@@ -1087,15 +1136,15 @@ footer div.copyright {
 }
 
 .form-control::-webkit-input-placeholder {
-    color: #ffffff;
+    color: #0099ff;
 }
 
 .form-control:-moz-placeholder {
-    color: #ffffff;
+    color: #0099ff;
 }
 
 .form-control::-moz-placeholder {
-    color: #ffffff;
+    color: #0099ff;
 }
 
 .form-control:-ms-input-placeholder {
@@ -1130,7 +1179,7 @@ div.fancy-select {
     background: transparent;
     font-size: 24px;
     font-weight: 700;
-    color: #ed145b;
+    color: #af50c3;
     border: none;
     outline: none;
 }
@@ -1142,7 +1191,7 @@ div.fancy-select {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default .btn-default.active,
 .open > .dropdown-toggle.btn-default {
-    color: #ed145b;
+    color: #af50c3;
     background-color: transparent;
     border-color: transparent;
     border: none;
@@ -1208,7 +1257,7 @@ div.fancy-select {
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-    color: #f7941d;
+    color: #af50c3;
     text-decoration: none;
     background-color: transparent;
     border: none;
@@ -1267,7 +1316,7 @@ div.fancy-select {
 }
 .owl-controls .owl-dots .owl-dot.active span,
 .owl-controls .owl-dots .owl-dot:hover  span{
-	background:#f7941d;
+	background:#af50c3;
 }
 .owl-controls .owl-dots .owl-dot span{
 	width: 10px;
@@ -1337,7 +1386,11 @@ div.fancy-select {
 }
 
 .kunst span.turquoise {
-	color: #da1e48;
+	color: #af50c3;
+}
+
+.total span.turquoise {
+	color: #af50c3;
 }
 
 
@@ -1662,7 +1715,7 @@ li.top-double-space {
 
 .modal-dialog .modal-content {
 	background-color: rgb(30,30,30);
-	border-color: #ed145b;
+	border-color: #2DA8DF;
 }
 
 .modal-dialog .modal-content .modal-header {
@@ -1707,11 +1760,11 @@ li.top-double-space {
 }
 
 .alert-info {
-	border: 1px solid #ed145b;
-	color: #ed145b;
+	border: 1px solid #28d9c1;
+	color: #28d9c1;
 }
 
 .alert-error {
   border: 1px solid rgb(150,40,40);
-  color: #ed145b;
+  color: #00B8EE;
 }
