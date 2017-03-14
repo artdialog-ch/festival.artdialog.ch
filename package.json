@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "website for festival projects of ArtDialog.ch",
   "main": "www/index.php",
-  "dependencies": {},
+  "dependencies": {
+    "ws": "^2.0.2"
+  },
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.11.2",
