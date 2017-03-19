@@ -1,5 +1,5 @@
 ﻿{
-    "_id": "DUBI1706",
+    "_id": "TABI0107",
 	"thema": "ArtDialog Festival 2017",
     "beginAt": {
         "$date": "2017-06-17T19:30:00.000Z"
@@ -10,8 +10,8 @@
     "lc": {
         "de": {
             "performance": {
-                "title": "ART Total",
-                "subtitle": "Duo Shapovalov | Vershinin\nVioloncello | Klavier"
+                "title": "ART Dance",
+                "subtitle": "RED SPINEL \n"LET’S TANGO!\""
             },
             "location": {
                 "place": "Residenz Au Lac\nBiel/Bienne",
@@ -22,8 +22,8 @@
         },
         "fr": {
             "performance": {
-                "title": "ART Total",
-                "subtitle": "Duo Shapovalov | Vershinin\nvioloncelle | piano"
+                "title": "ART Dance",
+                "subtitle": "RED SPINEL \n"LET’S TANGO!\""
             },
             "location": {
                 "place": "Residenz Au Lac\nBiel/Bienne",
