@@ -1769,6 +1769,20 @@ li.top-double-space {
   color: #00B8EE;
 }
 
+#social-bar{
+    text-align: left;
+}
+
+#social-bar .social{
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 28px;
+}
+
+#social-bar .social:first-child{
+    margin-left: 0px;
+
+}
 
 /*  Responsive style    */
 
@@ -1919,6 +1933,10 @@ html, body{
 
     :lang(fr) .month.two{
         font-size: 20px;
+    }
+
+    #social-bar{
+        text-align: center;
     }
 }
 
