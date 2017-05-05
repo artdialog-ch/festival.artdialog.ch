@@ -88,4 +88,11 @@ $( document ).ready(function() {
 				$(this).children(':first').unwrap();
 			});
 		}
+
+		var soc = '<div id="social-bar">' +
+			'<div class="social fb"><a href="https://www.facebook.com/festivalartdialog" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>' +
+			'<div class="social tw"><a href="https://twitter.com/artdialogfest" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></div>' +
+			'<div class="social tw"><a href="https://www.instagram.com/festival.artdialog" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>' +
+			'</div>';
+		$('.aside').append(soc);
 });
