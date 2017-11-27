@@ -93,7 +93,7 @@ $(document).ready(function() {
         image: {
             //tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
             titleSrc: function(item) {
-                return item.el.attr('title') + '<small></small>';
+                return item.el.data('title') + '<small></small>';
             }
         }
 
@@ -156,6 +156,22 @@ initOwlCarousel = function() {
       smartSpeed:450
 
   });
+
+    // Header slider
+
+    $('#h-slider .owl-slider').owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        nav:false,
+        dots:false,
+        smartSpeed:1000,
+        slideBy:1,
+        margin:20,
+        items:1,
+        animateOut: 'fadeOut',
+    });
 };
 // smooth scroll
 
@@ -182,46 +198,46 @@ $(function() {
 
 	if ( $container.length !== 0 ){
 
-    $container.isotope({
-        itemSelector: '.isotope-item'
-    });
-	var hash = window.location.hash.split('#') ;
-
-		if( hash[1] !== 'undefined'){
-
-			$('.selectpicker option').each(function(){
-
-				if( $(this).data('filter-value') == '.'+hash[1] ){
-
-					$container.isotope({ filter: '.'+hash[1] });
-
-				}
-			});
-		}
-    // filter buttons
-    $('select').change(function() {
-        var $this = $(this);
-
-        // store filter value in object
-        // i.e. filters.color = 'red'
-        var group = $this.attr('data-filter-group');
-
-        filters[group] = $this.find(':selected').attr('data-filter-value');
-        // console.log( $this.find(':selected') )
-        // convert object into array
-        var isoFilters = [];
-        for (var prop in filters) {
-            isoFilters.push(filters[prop])
-        }
-        console.log(filters);
-        var selector = isoFilters.join('');
         $container.isotope({
-            filter: selector
+            itemSelector: '.isotope-item'
         });
-        return false;
-    });
+        var hash = window.location.hash.split('#') ;
 
-}
+            if( hash[1] !== 'undefined'){
+
+                $('.selectpicker option').each(function(){
+
+                    if( $(this).data('filter-value') == '.'+hash[1] ){
+
+                        $container.isotope({ filter: '.'+hash[1] });
+
+                    }
+                });
+            }
+        // filter buttons
+        $('select').change(function() {
+            var $this = $(this);
+
+            // store filter value in object
+            // i.e. filters.color = 'red'
+            var group = $this.attr('data-filter-group');
+
+            filters[group] = $this.find(':selected').attr('data-filter-value');
+            // console.log( $this.find(':selected') )
+            // convert object into array
+            var isoFilters = [];
+            for (var prop in filters) {
+                isoFilters.push(filters[prop])
+            }
+            console.log(filters);
+            var selector = isoFilters.join('');
+            $container.isotope({
+                filter: selector
+            });
+            return false;
+        });
+
+    }
 
     // $('ul>li').click(function() {
     //     var $this = $(this);
@@ -241,6 +257,35 @@ $(function() {
 
 
 });
+
+
+$(document).ready(function() {
+
+    if ( $('#tickets, #program').length > 0 ){
+        var $iso =  $('#tickets, #program').isotope({
+            itemSelector: '.ticket',
+            layoutMode: 'fitRows',
+        });
+
+        $('#select-panel .select').on('click', function () {
+            $(this).toggleClass('active');
+            var select = $(this).data('select');
+            $('#box-panel .'+ select).toggleClass('show');
+        });
+
+        $('#box-panel .item').on('click', function () {
+            $(this).siblings().removeClass('active');
+            $(this).addClass('active');
+            var ctg = $(this).data('filter-value');
+            var active = $(this).parent().siblings().find('.active').data('filter-value');
+            ctg =  active !== undefined ? ctg+active : ctg ;
+            $iso.isotope({ filter: ctg });
+        });
+    }
+
+});
+
+
 
 /* Ajax mail send */
 
@@ -298,120 +343,116 @@ $(document).ready(function() {
 $(document).ready(function() {
 
 
-
 	function ajaxgallery( yy ){
+	    console.log(new Date());
 
 		yy = typeof yy !== 'undefined' ? yy : 2016;
 
+        $.post('/de/gallery.php',{ year: yy}, function(data) {
 
+            var items = $(data).find('#gal-items.row .' + yy);
+            var years = $(data).find('#gal-filters .year');
 
-$.post('/de/gallery.php',{ year: yy}, function(data) {
+            $('#gallery .row').remove();
 
-var items = $(data).find('#gal-items.row .' + yy);
+            $('#gallery').append('<div class="row" />');
 
-var years = $(data).find('#gal-filters .year');
+            $('.year-pager').html(years);
 
-$('#gallery .row').remove();
+            var j = 0;
 
-$('#gallery').append('<div class="row" />');
+            var i = 0;
 
-$('.year-pager').html(years);
+            var container = $('#gallery .row');
 
-var j = 0;
+            container.masonry({
 
-var i = 0;
+              itemSelector: '.col-md-3',
 
-var container = $('#gallery .row');
+              columnWidth:  1,
 
-container.masonry({
-
-  itemSelector: '.col-md-3',
-
-  columnWidth:  1,
-
-});
+            });
 
 
 
-galadditems(j);
+            galadditems(j);
 
 
 
-function galadditems(j){
+            function galadditems(j){
 
-i = 12*j;
+            i = 12*j;
 
-var elem = items.slice(i, i+12);
+            var elem = items.slice(i, i+12);
 
-elem.each(function(){
+            elem.each(function(){
 
-$(this).attr('style', 'opacity:0');
+                $(this).attr('style', 'opacity:0');
 
-});
+                });
 
-container.append(elem);
+                container.append(elem);
 
-container = $('#gallery .row').imagesLoaded( function() {
+                container = $('#gallery .row').imagesLoaded( function() {
 
-container.masonry('appended',elem);
+                container.masonry('appended',elem);
 
-$('.gal-items-end').remove();
+                $('.gal-items-end').remove();
 
-$('#gallery').append('<div class="gal-items-end" />');
+                $('#gallery').append('<div class="gal-items-end" />');
 
-$('.gal-items-end').viewportChecker({
+                $('.gal-items-end').viewportChecker({
 
-offset:-200,
+                offset:-200,
 
-callbackFunction:function(elem, action){
+                callbackFunction:function(elem, action){
 
-j++;
+                j++;
 
-if(i < items.length ){
+                if(i < items.length ){
 
-galadditems(j);
+                galadditems(j);
 
-}
+                }
 
-}
+                }
 
-});
+                });
 
-});
+                });
 
-}
-
-
-
-$('.year-pager a').on('click', function(event){
-
-event.preventDefault();
-
-ajaxgallery($(this).text());
-
-});
-
-$('.year-pager a').each(function(){
-
-if ($(this).text() == yy){
-
-$(this).addClass('active');
-
-}
-
-});
-
-});
-
-}
+            }
 
 
 
-if ($('#gallery').length !== 0){
+            $('.year-pager a').on('click', function(event){
 
-ajaxgallery();
+                event.preventDefault();
 
-}
+                ajaxgallery($(this).text());
+
+            });
+
+            $('.year-pager a').each(function(){
+
+                if ($(this).text() == yy){
+
+                    $(this).addClass('active');
+
+                }
+
+            });
+
+        });
+
+
+    }
+
+
+
+    if ($('#gallery').length !== 0){
+        ajaxgallery();
+    }
 
 
 

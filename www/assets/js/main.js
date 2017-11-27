@@ -86,8 +86,33 @@ $( document ).ready(function() {
 			//alert($('footer > *').first();
 			footer.load("partial/footer.html footer", function() {
 				$(this).children(':first').unwrap();
+
+                var wh = $(window).height();
+                var footer_height = $('body > footer').height();
+                var header_height = $('body > header').height();
+
+                $('body > .main').css('min-height', wh - footer_height - header_height);
+
+                $(document).scroll(function(){
+                    if ($(window).scrollTop()>400){
+                        $("#back-to-top").addClass('show');
+                    }
+                    else{
+                        $("#back-to-top").removeClass('show');
+                    }
+                });
+
+                $("#back-to-top").click(function(){
+                    $('body,html').animate({scrollTop:0},1000);
+                    return false;
+                });
+
 			});
+
+
 		}
+
+		// Social icon
 
 		var soc = '<div id="social-bar">' +
 			'<div class="social fb"><a href="https://www.facebook.com/festivalartdialog" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>' +
@@ -95,4 +120,11 @@ $( document ).ready(function() {
 			'<div class="social tw"><a href="https://www.instagram.com/festival.artdialog" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>' +
 			'</div>';
 		$('.aside').append(soc);
+
+		// Back to Top
+
+
+
+
+
 });
