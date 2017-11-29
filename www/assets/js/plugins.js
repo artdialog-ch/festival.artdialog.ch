@@ -280,6 +280,17 @@ $(document).ready(function() {
             var active = $(this).parent().siblings().find('.active').data('filter-value');
             ctg =  active !== undefined ? ctg+active : ctg ;
             $iso.isotope({ filter: ctg });
+
+            $(this).parent().removeClass('show');
+            var select = $(this).parent().data('select');
+            $('#select-panel .' + select ).removeClass('active');
+
+            if ($(this).data('filter-value') == '' ){
+                $('#select-panel .' + select).removeClass('selected');
+            }
+            else{
+                $('#select-panel .' + select).addClass('selected');
+            }
         });
     }
 

@@ -615,7 +615,8 @@ header .h-main{
     cursor: pointer;
 }
 
-#select-panel .select.active{
+#select-panel .select.active,
+#select-panel .select.selected{
     color: #d44e14;
 }
 
@@ -1624,6 +1625,7 @@ footer .f-text{
     color: #0f0f0f;
     font-family: 'Trirong', serif;
     font-size: 18px;
+    font-weight: 300;
 }
 
 footer ul.ftr-menu {
