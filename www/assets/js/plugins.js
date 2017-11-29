@@ -357,7 +357,7 @@ $(document).ready(function() {
 	function ajaxgallery( yy ){
 	    console.log(new Date());
 
-		yy = typeof yy !== 'undefined' ? yy : 2016;
+		yy = typeof yy !== 'undefined' ? yy : 2017;
 
         $.post('/de/gallery.php',{ year: yy}, function(data) {
 
