@@ -452,7 +452,7 @@ header .h-main{
     text-transform: uppercase;
     font-weight: 700;
     letter-spacing: 2px;
-    word-break: break-all;
+    word-wrap: break-word;
 }
 
 .front-content{
@@ -738,7 +738,7 @@ ul.language li > span {
 }
 
 html:lang(de) ul.language li > span,
-html:lang(en) ul.language li > span,
+html:lang(fr) ul.language li > span,
 html:lang(en) ul.language li > span{
     color: white;
 }
@@ -1278,6 +1278,10 @@ address {
     color: #484848;
 }
 
+.ticket .left .time{
+    font-size: 18px;
+}
+
 
 
 
@@ -1636,7 +1640,7 @@ footer h2 {
 
 footer .f-text{
     color: #0f0f0f;
-    font-family: 'Trirong', serif;
+    font-family: 'Fira Sans', sans-serif;
     font-size: 18px;
     font-weight: 300;
 }
@@ -2532,7 +2536,7 @@ html, body{
 
 
     #select-panel .ort{
-        padding-left: 15px;
+        padding-left: 5px;
     }
 
     #box-panel .ctg, #box-panel .ort{
@@ -2976,6 +2980,7 @@ html, body{
         flex-wrap: wrap;
         min-height: 140px;
         justify-content: flex-end;
+        height: 140px;
     }
 
     .front #h-slider .sl-right,
@@ -3140,6 +3145,7 @@ html, body{
     }
 
     .grid-item .item-img .img-title {
+        display: inline-block;
         font-size: 10px;
         line-height: 12px;
     }
@@ -3192,14 +3198,19 @@ html, body{
     }
 
     #h-slider .sl-text {
-        padding: 0px 5px 0 5px;
-        text-transform: uppercase;
+        padding: 0px 5px 0 0px;
+        text-transform: lowercase;
         font-size: 13px;
         color: #484848;
         font-weight: 300;
         letter-spacing: 0px;
         line-height: 15px;
         word-break: break-word;
+
+    }
+
+    #h-slider .sl-text.date{
+        display: none;
     }
 
     .front #h-slider .sl-left .inner, .h-wide #h-slider .sl-left .inner {
@@ -3274,6 +3285,10 @@ html, body{
         line-height: 34px;
         font-weight: 700;
         color: #484848;
+    }
+
+    .ticket .left .time{
+        font-size: 16px;
     }
 
     .ticket .right {
