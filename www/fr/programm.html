@@ -27,225 +27,377 @@
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
-<body>
+<body class="page-programm">
     <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <header>
         <div class="container">
 				<ul class="language">
+					<li><span>FR</span></li>					
 					<li><a href="../de/programm.html" hreflang="de" title="auf Deutsch lesen">DE</a></li>
-					<li><span>FR</span></li>
-					<!--<li><a href="../en/programm.html" hreflang="en" title="switch to English">EN</a></li>-->
+					<li><a href="../en/programm.html" hreflang="en" title="switch to English">EN</a></li>
 				</ul>
                 <div class="row">
-                    <div class="col-sm-4 col-xs-6">
-                        <div class="logo">
-                            <a href="index.html"><img src="../assets/img/logo.png" alt=".." class="img-responsive"></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-12 ml-2">
-                        <div class="tagwrapper">
-                            <div class="tagline">
-                                Programme 2017
+					<!--Logo start-->
+                <div class="col-sm-4 col-md-3">			 
+                    <div class="logo">
+						<a href="index.html"><img src="../assets/img/logo.png" alt=".." class="img-responsive"></a>
+					</div>
+				</div>
+				<!--Logo end-->	
+                    <div class="col-md-9 col-sm-6 col-xs-12">
+                    <div class="h-main">
+                        <div id="h-slider">
+                            <div class="slide">
+                                <div class="sl-left">
+                                    <div class="inner">
+                                        <div class="page-title">Programme 2018</div>
+
+                                        <div id="select-panel">
+                                            <div class="select ctg" data-select="ctg" >Catégorie</div>
+                                            <div class="select ort" data-select="ort">Lieux</div>
+                                        </div>
+                                        <div id="box-panel">
+                                            <div class="box ctg" data-select="ctg">
+                                                <div class="item" data-filter-value="" class="selected first">Tous</div>
+                                                <div class="item" data-filter-value=".dance">Dance</div>
+                                                <div class="item" data-filter-value=".ensemble">Ensemble</div>
+                                                <div class="item" data-filter-value=".kunst">Visuel</div>
+                                                <div class="item" data-filter-value=".futur">Future</div>
+                                                <div class="item" data-filter-value=".recital">Recital</div>
+                                                <div class="item" data-filter-value=".total">Total</div>
+                                                <div class="item" data-filter-value=".wein">Vin</div>
+                                            </div>
+                                            <div class="box ort" data-select="ort">
+                                                <div class="item" data-filter-value="" class="selected">Tous</div>
+                                                <div class="item" data-filter-value=".biel">Bienne</div>
+                                                <div class="item" data-filter-value=".la-neuveville">La Neuveville</div>
+											</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sl-right" style="background-image: url('/assets/img/h_programm.png')"></div>
                             </div>
                         </div>
+                        <div id="h-line">
+                            <div class="bg"></div>
+                            <div class="triangel"></div>
+                        </div>
+                        <div id="h-art"></div>
                     </div>
                 </div>
-		</div>
+
+            </div>
+        </div>
     </header>
     <div class="main">
         <div class="container">
             <div class="row">
                 <div class="aside col-md-3">
-					<div id="partial-nav-bar"></div>
-				</div>
-                <div class="col-md-9 contact">
-                    <div id="filters">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="fancy-select">
-                                    <select class="selectpicker option-set clearfix" data-filter-group="leuchtenart">
-                                        <option value="*" data-filter-value="" class="selected">Catégorie</option>
-                                        <option value="#filter-dance" data-filter-value=".dance">Dance</option>
-                                        <option value="#filter-ensemble" data-filter-value=".ensemble">Ensemble</option>
-                                        <option value="#filter-kunst" data-filter-value=".kunst">Visuel</option>
-                                        <option value="#filter-futur" data-filter-value=".futur">Future</option>
-                                        <option value="#filter-recital" data-filter-value=".recital">Recital</option>
-										<option value="#filter-total" data-filter-value=".total">Total</option>
-                                        <option value="#filter-wein" data-filter-value=".wein">Vin</option>
-                                    </select>
-                                </div>
-                                <div class="fancy-select">
-                                    <select class="selectpicker option-set clearfix" data-filter-group="lichtfarbe">
-                                        <option value="*" data-filter-value="" class="selected">Lieux</option>
-                                        <option value="#filter-biel" data-filter-value=".biel">Bienne</option>
-                                        <option value="#filter-la-neuveville" data-filter-value=".la-neuveville">La Neuveville</option>
-                                        <option value="#filter-moutier" data-filter-value=".moutier">Moutier</option>
-                                        <!--<option value="#filter-st-petersinsel" data-filter-value=".st-petersinsel">Île Saint-Pierre</option>-->   
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row"><br><br><br><br>
-						<!--<h2 class="cal"><div align="center">Bientôt de retour</div></h2>-->
-                        <div id="program" class="program">
-                            <div class="isotope-item col-md-4 col-sm-6 col-xs-12 kunst biel">
-                                <div class="program-item">
-                                    <div class="date"><span class="digits">08-01</span><span style="font-size: 17px;">juin/jillet</span></div>
-                                    <div class="category"><span class="art green">ART</span>Visuel</div>
-                                    <div class="details">
-                                        <span class="program-name">Collection des arts visuels<br>de la ville de Bienne</span>
-                                        <p></p>
-										<span class="heavy blue"><a href="kunst.html">24 artistes biennois décédés.<br>Une selection de leurs oeuvres</a></span>
-                                        <br>Biel/Bienne
-										<span class="tickets">
-											<a>entrée libre <i class="fa fa-angle-double-right"></i></a>
-										</span>
+                  <div id="partial-nav-bar"></div>
+                </div>
+				<div class="col-md-9 contact">
+					<div class="">
+						<div id="tickets" class="program">
+							<!--ticket  start -->
+                            <div class="ticket isotope-item2 biel kunst">
+								<div class="b-line"></div>
+                                <div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/kunst.html">-->
+                                        <div class="date">24.05</div>
+                                        <div class="time">18h30</div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">Visuel</span>
+										</div>
+                                        <h2 class="title">EXPOSITION "NOIR - BLANC"</h2>
+                                        <div class="place">Biel/Bienne |  Galerie Residenz Au Lac</div>
+                                        <div class="text">
+                                            VERNISSAGE<br>
+											Concert "Jeunes talents biennois"
+                                        </div>
+									<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
                                     </div>
                                 </div>
                             </div>
-                            <div class="isotope-item col-md-4 col-sm-6 col-xs-12 biel futur">
-                                <div class="program-item">
-                                    <div class="date"><span class="digits">10</span><span>Juin</span></div>
-                                    <div class="category"><span class="art blue">ART</span>Future</div>
-                                    <div class="details">
-										<span class="program-name">Young World Talent</span>
-										<p></p>
-                                        <span class="heavy blue"><a href="detail_kinder_biel.html">Lisa Zubenko<br>Batbyamba Jambalbayarnyam<br>Christine Mihailichenko</a></span>
-                                        <br>Biel/Bienne<br>17h00
-                                        <span class="tickets">
-											<a href="detail_kinder_biel.html#tickets">Collecte <i class="fa fa-angle-double-right"></i></a>
-										</span>
+                            <!--ticket end-->
+
+                            <!--ticket  start -->
+                            <div class="b-line ticket isotope-item2 biel dance">
+								<div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/detail_ballet.html">-->
+                                        <div class="date">25.05</div>
+                                        <div class="time">19h30</div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">Dance</span>
+                                        </div>
+                                        <h2 class="title">LES PASSIONS DU JUGLARFLAMENCO DE MADRID</h2>
+                                        <div class="place">Biel/Bienne | Residenz Au Lac </div>
+										<div class="text">
+                                        </div>
+									<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
                                     </div>
                                 </div>
                             </div>
-							<div class="isotope-item col-md-4 col-sm-6 col-xs-12 recital biel">
-                                <div class="program-item">
-                                    <div class="date"><span class="digits">16</span><span>Juin</span></div>
-                                    <div class="category"><span class="art aqua">ART</span>Recital</div>
-                                    <div class="details">
-									<span class="program-name">Soirée hungaro-allemande</span>
-										<p></p>
-                                        <span class="heavy blue"><a href="detail_benedek.html">Benedek Horváth - piano</a></span>
-										<p></p>
-                                        <br>Biel/Bienne<br>19h30
-										<span class="tickets">
-											<a href="detail_benedek.html#tickets">Tickets <i class="fa fa-angle-double-right"></i></a>
-										</span>
+                            <!--ticket end-->
+							
+							<!--ticket  start -->
+                            <div class="b-line ticket isotope-item2 la-neuveville dance">
+                                <div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/detail_ballet.html">-->
+                                        <div class="date">26.05</div>
+                                        <div class="time">19h30</div>
+									</div>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">Dance</span>
+                                        </div>
+                                        <h2 class="title">LES PASSIONS DU JUGLARFLAMENCO DE MADRID</h2>
+                                        <div class="place">La Neuveville | PLACE DE LA LIBERTÉ </div>
+                                        <div class="text">
+                                        </div>
+									<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
                                     </div>
                                 </div>
                             </div>
-							<div class="isotope-item col-md-4 col-sm-6 col-xs-12  total biel">
-                                <div class="program-item">
-                                    <div class="date"><span class="digits">17</span><span>Juin</span></div>
-                                    <div class="category"><span class="art orange">ART</span>Total</div>
-                                    <div class="details">
-									<span class="program-name">100 ans d’art moderne en Europe</span>
-									<p></p>
-									<span class="heavy blue"><a href="detail_total.html">Duo Shapovalov & Vershinin<br> violoncelle / piano</a></span>
-                                        <br>Biel/Bienne<br>19h30
-                                        <span class="tickets">
-											<a href="detail_total.html#tickets">Tickets <i class="fa fa-angle-double-right"></i></a>
-										</span>
+                            <!--ticket end-->
+							
+							<!--ticket  start -->
+                            <div class="b-line ticket isotope-item2 la-neuveville wein">
+                                <div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/detail_trio.html">-->
+                                        <div class="date">31.05</div>
+                                        <div class="time">19h30</div>
+									</div>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">vin</span>
+                                        </div>
+                                        <h2 class="title">CONCERT-DEGUSTATION</h2>
+                                        <div class="place">La Neuveville | PLACE DE LA LIBERTÉ</div>
+                                        <div class="text">
+										DUO ZISMAN | FULGIDO (Suisse)<br>
+										BERNARD CAHBLOZ – Animateur<br>
+										Programme : "Soul Tango Invasion!"
+										<!--<span class="w-sb ls-2 upper">DUO ZISMAN | FULGIDO</span> (Schweiz)<br>
+										Programm: "Soul Tango Invasion!"-->
+                                        </div>
+									<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
                                     </div>
                                 </div>
                             </div>
-							<div class="isotope-item col-md-4 col-sm-6 col-xs-12 la-neuveville recital">
-                                <div class="program-item">
-                                    <div class="date"><span class="digits">18</span><span>Juin</span></div>
-                                    <div class="category"><span class="art aqua">ART</span>Recital</div>
-                                    <div class="details">
-										<span class="program-name">PAROLES & MUSIQUE</span>
-										<p></p>
-                                        <span class="heavy blue"><a href="detail_denis.html">Denis Shapovalov - Violoncelle<br>Textes lus par John Ebbutt</a></span>
-                                        <br>La Neuveville<br>20h00
-                                        <span class="tickets">
-											<a href="detail_total.html#tickets">Collecte <i class="fa fa-angle-double-right"></i></a>
-										</span>
+                            <!--ticket end-->
+							
+							<!--ticket  start -->
+                            <div class="b-line ticket isotope-item2 biel ensemble">
+                                <div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/detail_trio.html">-->
+                                        <div class="date">31.05</div>
+                                        <div class="time">19h30</div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">Ensemble</span>
+                                        </div>
+                                        <h2 class="title"></h2>
+                                        <div class="place">Biel/Bienne | Residenz Au Lac</div>
+                                        <div class="text">
+										QUATUOR VAN KUIJK (France)<br>Programme : Debussy, Webern, Schubert
+                                        </div>
+									<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
+									</div>
+                                </div>
+                            </div>
+                            <!--ticket end-->
+							
+							<!--ticket  start -->
+                            <div class="b-line ticket isotope-item2 biel recital">
+                                <div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/detail_gluzman.html">-->
+                                        <div class="date">01.06</div>
+                                        <div class="time">19h30</div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">Recital</span>
+                                        </div>
+                                        <h2 class="title"></h2> 
+                                        <div class="place">Biel/Bienne | Residenz Au Lac</div>
+										<div class="text">
+										PHILIPPE QUINT – violon (USA)<br>Programme : Paganini, Bach, Ysaÿe
+                                        </div>
+										<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
+									</div>
+                                </div>
+                            </div>
+                            <!--ticket end-->
+							
+							<!--ticket  start -->
+                            <div class="b-line ticket isotope-item2 biel recital">
+                                <div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/detail_benedek.html">-->
+                                        <div class="date">02.06</div>
+                                        <div class="time">19h30</div>
+										</div>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">Recital</span>
+                                        </div>
+                                        <h2 class="title">WORLD STAR</h2> 
+                                        <div class="place">Biel/Bienne | Residenz Au Lac</div>
+										<div class="text">
+										BORIS BEREZOVSKY – piano (Russie)<br>
+										Programme : Liszt
+										<!--<span class="w-sb ls-2 upper">BORIS BEREZOVSKY – Klavier</span> (Russland)<br>
+										Programm: Liszt-->
+                                        </div>
+									<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
                                     </div>
                                 </div>
                             </div>
-							<div class="isotope-item col-md-4 col-sm-6 col-xs-12 wein moutier">
-                                <div class="program-item">
-                                    <div class="date"><span class="digits">23</span><span>Juin</span></div>
-                                    <div class="category"><span class="art blue-dark">ART</span>Vin</div>
-                                    <div class="details">
-										<span class="program-name">CONCERT-DÉGUSTATION</span>
-                                        <span class="heavy blue"><a href="detail_wein.html">Irina Solomatina Tissot - chant<br>Simon Peguiron - piano<br>Bernard Chabloz - animateur</a></span>
-                                        <br>Moutier<br>20h00
-										<span class="tickets">
-											<a href="detail_wein.html#tickets">Tickets <i class="fa fa-angle-double-right"></i></a>
-										</span>
+                            <!--ticket end-->
+
+                           	<!--ticket  start -->
+                            <div class="b-line ticket isotope-item2 biel futur">
+                                <div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/detail_kinder_biel.html">-->
+                                        <div class="date">07.06</div>
+                                        <div class="time">19h30</div>
                                     </div>
-									<a href="detail_wein.html"><div class="wine"></div></a>
-                                </div>
-                            </div>
-							<div class="isotope-item col-md-4 col-sm-6 col-xs-12 recital biel">
-                                <div class="program-item">
-                                    <div class="date"><span class="digits">24</span><span>Juin</span></div>
-                                    <div class="category"><span class="art aqua">ART</span>Recital</div>
-                                    <div class="details">
-                                        <span class="program-name">WORLD STAR IN BIEL</span>
-                                        <span class="heavy blue"><a href="detail_gluzman.html">Vadim Gluzman - violon<br>Evgeny Sinaiski – piano</a></span>
-                                        <br>Biel/Bienne<br>19h30
-                                        <span class="tickets">
-											<a href="detail_gluzman.html#tickets">Tickets <i class="fa fa-angle-double-right"></i></a>
-										</span>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">future</span>
+                                        </div>
+                                        <h2 class="title">YOUNG WORLD TALENT</h2>
+                                        <div class="place">Biel/Bienne | Residenz Au Lac</div>
+                                        <div class="text">
+										LAO RUI SI – piano (Chine), 9 ans<br>
+										LEIA ZHU – violon (Angleterre), 10 ans<br>
+										SOFIA LEIFER – piano (Espagne), 11 ans
+										</div>
+									<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
                                     </div>
                                 </div>
                             </div>
-							<div class="isotope-item col-md-4 col-sm-6 col-xs-12 recital ensemble la-neuveville">
-                                <div class="program-item">
-                                    <div class="date"><span class="digits">25</span><span>Juin</span></div>
-                                    <div class="category"><span class="art magenta">ART</span>Ensemble</div>
-                                    <div class="details">
-										<span class="program-name">CONCERT – PROMENADE</span>
-										<p></p>
-                                        <span class="heavy blue"><a href="detail_trio.html">Kobyliansky-Trio</a></span>
-                                        <br>La Neuveville<br>17h00
-										<span class="tickets">
-											<a href="detail_trio.html#tickets">Collecte <i class="fa fa-angle-double-right"></i></a>
-										</span>
+                            <!--ticket end-->
+							
+							<!--ticket  start -->
+                            <div class="b-line ticket isotope-item2 biel recital">
+                                <div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/detail_benedek.html">-->
+                                        <div class="date">08.06</div>
+                                        <div class="time">19h30</div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">Recital</span>
+                                        </div>
+                                        <h2 class="title"></h2> 
+                                        <div class="place">Biel/Bienne | Residenz Au Lac</div>
+										<div class="text">CHIARA OPALIO – piano (Italie)<br> 
+										Programme : NN
+                                        </div>
+									<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
                                     </div>
                                 </div>
                             </div>
-							<div class="isotope-item col-md-4 col-sm-6 col-xs-12 recital biel">
-                                <div class="program-item">
-                                    <div class="date"><span class="digits">30</span><span>Juin</span></div>
-                                    <div class="category"><span class="art magenta">ART</span>Ensemble</div>
-                                    <div class="details">
-										<span class="program-name">FAMILY SHERLING</span>
-                                        <span class="heavy blue"><a href="detail_sherling.html">Matvey Sherling - saxophone<br>Mariamna Sherling - piano</a></span>
-                                        <br>Biel/Bienne<br>19h30
-                                        <span class="tickets">
-											<a href="...">Collecte <i class="fa fa-angle-double-right"></i></a>
-										</span>
+                            <!--ticket end-->
+							
+							<!--ticket  start -->
+                            <div class="b-line ticket isotope-item2 biel total">
+                                <div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/detail_total.html">-->
+                                        <div class="date">09.06</div>
+                                        <div class="time">19h30</div>
+									</div>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">total</span>
+                                        </div>
+                                        <h2 class="title">100 ANS DE LA CRÉATION "L‘HISTOIRE DU SOLDAT"<br>
+										Igor Stravinsky - Charles-Ferdinand Ramuz</h2>
+                                        <div class="place">Biel/Bienne | Residenz Au Lac</div>
+                                        <div class="text">
+										Spectacle avec le vidéo-projection <br>
+										ARTDIALOG ORCHESTRE (Suisse)<br>
+										Nicolas Farine - Chef d‘orchestre  (Suisse)<br>
+										Clive Hicks-Jenkins – Images (Angleterre)<br>
+										NN – Сomédien<br>
+                                        </div>
+									<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
                                     </div>
                                 </div>
                             </div>
-							<div class="isotope-item col-md-4 col-sm-6 col-xs-12 biel dance">
-                                <div class="program-item">
-                                    <div class="date"><span class="digits">01</span><span>Juillet</span></div>
-                                    <div class="category"><span class="art red">ART</span>Dance</div>
-                                    <div class="details">
-										<span class="program-name">Let's Tango</span>
-										<span class="heavy blue"><a href="detail_ballet.html">Solistes du ballet de l’opera Zurich<br>Kirichenko Twins | Aliana Pizzi</a></span><p></p>
-										<span class="heavy blue"><a href="detail_ballet.html">Musique: Duo Zisman | Fulgido <!--<br>bandonéon | guitare</--></a></span>
-                                        <br>Biel/Bienne<br>19h30
-                                        <span class="tickets">
-											<a href="detail_ballet.html#tickets">Tickets <i class="fa fa-angle-double-right"></i></a>
-										</span>
+                            <!--ticket end-->
+							
+							<!--ticket  start -->
+                            <div class="b-line ticket isotope-item2 biel recietal">
+                                <div class="inner">
+                                    <div class="left">
+									<!--<a href="../fr/detail_denis.html">-->
+                                        <div class="date">03.10</div>
+                                        <div class="time">19h30</div>
+									</div>
+                                    <div class="right">
+                                        <div class="art-title">
+                                            <span class="art">Art</span>
+                                            <span class="art ctg">Recital</span>
+                                        </div>
+                                        <h2 class="title">Extraconcert</h2> 
+                                        <div class="place">Biel/Bienne | Residenz Au Lac</div>
+										<div class="text">
+										ARKADI VOLODOS – piano (Espagne)<br>
+										Programme : Schubert, Rachmanoff, Skryabin
+										<!--<span class="w-sb ls-2 upper">ARKADI VOLODOS – Klavier</span> (Spanien)<br>
+										Programm: Schubert, Rachmanoff, Skryabin-->
+                                        </div>
+									<!--</a>-->
+                                        <!--<a href="/"  class="link" target="_blank">Achete ></a>-->
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <!--ticket end-->
+
+						</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+	</div>
     <footer>
     </footer>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
