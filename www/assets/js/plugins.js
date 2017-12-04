@@ -172,6 +172,22 @@ initOwlCarousel = function() {
         items:1,
         animateOut: 'fadeOut',
     });
+
+    // Kunst slider
+
+    $('#kunst-slider .owl-slider, #total-slider .owl-slider').owlCarousel({
+        loop:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        nav:false,
+        dots:true,
+        smartSpeed:1000,
+        slideBy:1,
+        margin:20,
+        items:1,
+        animateOut: 'fadeOut',
+    });
 };
 // smooth scroll
 
@@ -267,6 +283,10 @@ $(document).ready(function() {
             layoutMode: 'fitRows',
         });
 
+        if ( $(window).width()< 768 ){
+            $('#select-panel, #box-panel').insertBefore('#tickets');
+        }
+
         $('#select-panel .select').on('click', function () {
             $(this).toggleClass('active');
             var select = $(this).data('select');
@@ -355,9 +375,9 @@ $(document).ready(function() {
 
 
 	function ajaxgallery( yy ){
-	    console.log(new Date());
 
-		yy = typeof yy !== 'undefined' ? yy : 2016;
+
+		yy = typeof yy !== 'undefined' ? yy : 2017;
 
         $.post('/de/gallery.php',{ year: yy}, function(data) {
 
