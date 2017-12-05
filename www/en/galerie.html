@@ -9,7 +9,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title></title>
+    <title>Gallery ArtDialog Festival</title>
+	<meta name="description" content="Art Dialog Festival of arts">
+	<meta name="keywords" content="culture biel, culture la neuveville, classic music biel/bienne, classic music switzerland, artdialog festival biel/bienne,
+	international music festival switzerland, art dialog, art festival biel, music festival biel">
+	<meta name="author" content="Verein Art Dialog">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -29,23 +33,39 @@
     <header>
         <div class="container">
 			<ul class="language">
+				<li><span>EN</span></li>						
                 <li><a href="../de/galerie.html" class="de" hreflang="de" title="auf Deutsch lesen">DE</a></li>
 				<li><a href="../fr/galerie.html" class="fr" hreflang="fr" title="passer au français">FR</a></li>
-				<li><span>EN</span></li>
-            </ul>
+			</ul>
             <div class="row">
-                <div class="col-sm-3 col-xs-6">
+				<!--Logo start-->
+                <div class="col-sm-3 col-md-3">
                     <div class="logo">
                         <a href="index.html"><img src="../assets/img/logo.png" alt=".." class="img-responsive"></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-xs-12 ml-2">
-                    <div class="tagwrapper">
-                        <div class="tagline">
-                            Gallery
+                <!--Logo end-->
+
+                <div class="col-md-9 col-sm-9 col-xs-12">
+                    <div class="h-main">
+                        <div id="h-slider">
+                            <div class="slide">
+                                <div class="sl-left">
+                                    <div class="inner">
+                                        <div class="page-title">Gallery</div>
+                                    </div>
+                                </div>
+                                <div class="sl-right" style="background-image: url('/assets/img/h_galerie.png')"></div>
+                            </div>
                         </div>
+                        <div id="h-line">
+                            <div class="bg"></div>
+                            <div class="triangel"></div>
+                        </div>
+                        <div id="h-art"></div>
                     </div>
                 </div>
+
             </div>
         </div>
     </header>
@@ -56,15 +76,14 @@
                   <div id="partial-nav-bar"></div>
                 </div>
 				<div class="col-md-9 col-sm-9 gallery">
+                    <div class="b-line"></div>
                     <div class="row bg-black">
-						<div class="type"><a href="archiv.html">Our artists...</a></div>
 						<p></p>
                         <div class="col-md-12">
                             <ul class="year-pager">
                             </ul>
-                            <!--p class="small">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.</p>-->
-                            <div  id="gallery" class="gallery popup-gallery">
-                                <div class="row">
+							<div  id="gallery" class="gallery popup-gallery">
+							    <div class="row">
                                 </div>
                             </div>
                         </div>
@@ -85,7 +104,6 @@
 	<script src="../assets/plugins/masonry.pkgd.min.js"></script>
     <script src="../assets/js/plugins.js"></script>
     <script src="../assets/js/main.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
