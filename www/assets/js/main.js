@@ -80,6 +80,8 @@ $( document ).ready(function() {
 			});
 		}
 
+
+    // Back to Top
 		var footer = $('body > footer')
 		if (footer.length > 0)
 		{
@@ -115,16 +117,15 @@ $( document ).ready(function() {
 		// Social icon
 
 		var soc = '<div id="social-bar">' +
-			'<div class="social fb"><a href="https://www.facebook.com/festivalartdialog" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></div>' +
+			'<div class="social fb"><a href="https://www.facebook.com/festivalartdialog" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></div>' +
 			'<div class="social tw"><a href="https://twitter.com/artdialogfest" target="_blank"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></div>' +
 			'<div class="social tw"><a href="https://www.instagram.com/festival.artdialog" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>' +
 			'</div>';
-		$('.aside').append(soc);
 
-		// Back to Top
+    	$(window).width() < 768 ? $('body > header').append(soc) : $('.aside').append(soc);
 
-
-
-
+		$(window).on('resize', function() {
+            $(window).width() < 768 ? $('#social-bar').appendTo('body > header'): $('#social-bar').appendTo('.aside');
+		});
 
 });
