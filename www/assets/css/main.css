@@ -1696,9 +1696,9 @@ footer div.copyright {
 
 .form-control {
     background: transparent;
-    border: 1px solid #343434;
+    border: 0,5px solid #484848;
     border-radius: 0;
-    color: #343434;
+    color: #484848;
     height: auto;
 }
 
@@ -3103,7 +3103,7 @@ html, body{
 
     footer .f-text {
         color: #0f0f0f;
-        font-family: 'Trirong', serif;
+        font-family: 'Fira Sans', sans-serif
         font-size: 16px;
         font-weight: 300;
     }
@@ -3199,7 +3199,7 @@ html, body{
 
     #h-slider .sl-text {
         padding: 0px 5px 0 0px;
-        text-transform: lowercase;
+        text-transform: inherit;
         font-size: 13px;
         color: #484848;
         font-weight: 300;
