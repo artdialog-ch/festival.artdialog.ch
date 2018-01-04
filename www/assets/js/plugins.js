@@ -165,7 +165,7 @@ initOwlCarousel = function() {
         autoplayTimeout:5000,
         autoplayHoverPause:true,
         nav:false,
-        dots:false,
+        dots:true,
         smartSpeed:1000,
         slideBy:1,
         margin:20,

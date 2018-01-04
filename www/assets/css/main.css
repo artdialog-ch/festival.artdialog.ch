@@ -531,6 +531,14 @@ header .h-main{
     color: #b2b2b2;
 }
 
+.art-obj{
+    cursor: pointer;
+    display: inline-block;
+}
+
+.art-obj.active span{
+    font-weight: 700;
+}
 
 .main{
     position: relative;
@@ -561,6 +569,26 @@ header .h-main{
     margin-top: 30px;
 }
 
+
+.b-line-left::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 3000px;
+    height: 1px;
+    background-color: #e1e1e1;
+}
+
+.b-line-right::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 3000px;
+    height: 1px;
+    background-color: #e1e1e1;
+}
 
 
 #filters{
@@ -1381,7 +1409,64 @@ address {
     font-weight: 300;
 }
 
+.ad-items .reverse{
+    flex-direction: row-reverse;
+}
 
+.ad-items .reverse .text-side{
+    padding: 50px;
+}
+
+.ad-items .reverse .img-side::before{
+    right: 100%;
+    left: inherit;
+}
+
+.ad-items .slider{
+    justify-content: flex-start;
+}
+
+.ad-items  .slider .img-side{
+    flex: 0 0 70%;
+    position: relative;
+    padding: 0px;
+    padding-right: 140px;
+    max-width: 70%;
+}
+
+.ad-items  .slider .text-side{
+    padding-right: 0;
+}
+
+.ad-items .slider .img-side::before{
+    left: 100%;
+    left: inherit;
+    margin-right: -70px;
+}
+
+
+.ad-items .slider.reverse{
+    justify-content: flex-end;
+    flex-direction: inherit;
+}
+
+.ad-items  .slider.reverse .img-side{
+    flex: 0 0 70%;
+    position: relative;
+    padding: 0 70px;
+    max-width: 70%;
+}
+
+.ad-items  .slider.reverse .text-side{
+    padding: 70px;
+    padding-right: 0;
+}
+
+.ad-items .slider.reverse .img-side::before{
+    right: 100%;
+    left: inherit;
+    margin-right: -70px;
+}
 
 .total .ad-items  .second{
     justify-content: flex-end;
@@ -1911,6 +1996,20 @@ div.fancy-select {
 #slider-sm-12 .owl-controls{
 	display: inline-block;
 }
+
+#h-slider .owl-controls{
+    position: absolute;
+    bottom: 0px;
+}
+
+@media (max-width: 767px){
+    .owl-controls .owl-dots .owl-dot span {
+        width: 5px;
+        height: 5px;
+        margin: 5px 5px;
+    }
+}
+
 
 /* */
 
