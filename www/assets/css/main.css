@@ -1290,7 +1290,7 @@ address {
     font-weight: 300;
 }
 
-.ticket .right .link{
+.ticket .right .link, .link{
     display: inline-block;
     color: #d44e14;
     font-size: 15px;
