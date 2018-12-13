@@ -2241,7 +2241,7 @@ li.top-double-space {
 
 /*  Responsive style    */
 
-html, body{
+html{
     overflow-x: hidden;
     overflow-y: scroll;
 }

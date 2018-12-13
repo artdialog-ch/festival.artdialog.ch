@@ -373,118 +373,127 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-
-	function ajaxgallery( yy ){
-
-
-		yy = typeof yy !== 'undefined' ? yy : 2017;
-
-        $.post('/de/gallery.php',{ year: yy}, function(data) {
-
-            var items = $(data).find('#gal-items.row .' + yy);
-            var years = $(data).find('#gal-filters .year');
-
-            $('#gallery .row').remove();
-
-            $('#gallery').append('<div class="row" />');
-
-            $('.year-pager').html(years);
-
-            var j = 0;
-
-            var i = 0;
-
-            var container = $('#gallery .row');
-
-            container.masonry({
-
-              itemSelector: '.col-md-3',
-
-              columnWidth:  1,
-
-            });
-
-
-
-            galadditems(j);
-
-
-
-            function galadditems(j){
-
-            i = 12*j;
-
-            var elem = items.slice(i, i+12);
-
-            elem.each(function(){
-
-                $(this).attr('style', 'opacity:0');
-
-                });
-
-                container.append(elem);
-
-                container = $('#gallery .row').imagesLoaded( function() {
-
-                container.masonry('appended',elem);
-
-                $('.gal-items-end').remove();
-
-                $('#gallery').append('<div class="gal-items-end" />');
-
-                $('.gal-items-end').viewportChecker({
-
-                offset:-200,
-
-                callbackFunction:function(elem, action){
-
-                j++;
-
-                if(i < items.length ){
-
-                galadditems(j);
-
-                }
-
-                }
-
-                });
-
-                });
-
-            }
-
-
-
-            $('.year-pager a').on('click', function(event){
-
-                event.preventDefault();
-
-                ajaxgallery($(this).text());
-
-            });
-
-            $('.year-pager a').each(function(){
-
-                if ($(this).text() == yy){
-
-                    $(this).addClass('active');
-
-                }
-
-            });
-
-        });
-
-
-    }
-
-
-
-    if ($('#gallery').length !== 0){
-        ajaxgallery();
-    }
-
-
+let galleryData;
+	
+	let  galleryShow = (e) => {
+		e.preventDefault();
+		let year = e.target.innerText;
+		let gallery = document.querySelector("#gallery");
+		let rowYear = gallery.querySelector(".row-year-" + year);
+		
+		gallery.querySelectorAll(".row-year").forEach( a => a.style.display = "none");	
+		rowYear.style.display = "block";
+		
+		document.querySelectorAll(".year-pager a").forEach( a => a.className = "");	
+		e.target.className = "active";
+		
+		let msnry = new Masonry( rowYear, {
+			itemSelector: '.imgwrp',
+			columnWidth:  1,
+			transitionDuration: 0
+		});		
+		
+		let addImgs = year => {
+			
+			if (galleryData[year].length == 0 ){
+				rowYear.classList.add('row-load');
+				return;
+			}
+			
+			let imgsData = galleryData[year];
+			let imgs12 = imgsData.slice(0,12);
+			galleryData[year] = galleryData[year].slice(12,);
+			
+			let imgs12Div = [];				
+			 
+			imgs12.forEach( imgData => {
+				
+				let imgwrp = document.createElement('div');
+				imgwrp.setAttribute("class", "col-md-3 col-sm-6 imgwrp noload year-" + year);
+				imgwrp.style.opacity = 0;								
+				
+				let src = imgData[0];
+				let title = imgData[1];
+				
+				let galleryItem = document.createElement('div');
+				galleryItem.setAttribute("class", "gallery-item fadeIn animated"); 
+				
+				
+				let img = document.createElement('img');
+				img.setAttribute("src", src);
+				img.setAttribute("alt", title);
+				img.setAttribute("class", "img-responsive center-block");
+				
+				let a = document.createElement('a');
+				a.setAttribute("href", src);
+				a.setAttribute("data-title", title);
+				
+				let caption = document.createElement('div');
+				caption.setAttribute("class", "caption");
+				caption.innerHTML = title;
+				
+				a.append(caption);
+				galleryItem.append(img);
+				galleryItem.append(a);
+			
+				imgwrp.append(galleryItem);			
+				imgwrp.classList.remove("noload");					
+				
+				rowYear.append(imgwrp);
+				
+				imgs12Div.push(imgwrp);					
+				
+			});		
+			
+			gallery.querySelectorAll(".row-year").forEach( a => a.style.display = "none");	
+			rowYear.style.display = "block";
+			
+			let loader = document.createElement('div');
+			loader.className = "loading";
+			loader.style.width = "100%";
+			loader.style.height = "120px";
+			loader.style.background = "url(/assets/img/loading.gif) no-repeat 50% 50%";
+			loader.style.backgroundSize = "32px";
+			
+			gallery.append(loader);
+			
+			imagesLoaded( rowYear, function() {			 
+				msnry.appended( imgs12Div );			  
+				msnry.layout();	
+				gallery.querySelector(".loading").remove();
+				addImgs(year);
+			});
+		}
+		
+		if (!rowYear.classList.contains('row-load')){			
+			addImgs(year);
+		}		
+	}
+	
+	let galleryInit = data => {
+		galleryData = JSON.parse(data);
+		console.log(galleryData);
+		
+		let ulYears = document.querySelector(".year-pager");
+		let gallery = document.querySelector("#gallery");
+		gallery.innerHTML = "";
+		
+		Object.keys(galleryData).sort((a,c) => c - a).forEach(year => {
+			let li = document.createElement('li'); 
+			let a = document.createElement('a');
+			a.innerText = year;
+			a.setAttribute("href", "#");
+			a.addEventListener("click", galleryShow);
+			li.append(a);			
+			ulYears.append(li);			
+			
+			let rowYear = document.createElement('div');
+			rowYear.setAttribute("class", "row row-year row-year-" + year);
+			rowYear.setAttribute("style", "display:none;");
+			gallery.append(rowYear);
+		});	
+ 		document.querySelector(".year-pager a").click();			
+ 	}	
+ 	$.post('/gallery.php', galleryInit);
 
 });
