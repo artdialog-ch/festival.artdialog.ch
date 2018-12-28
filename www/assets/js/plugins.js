@@ -284,7 +284,7 @@ $(document).ready(function() {
         });
 
         if ( $(window).width()< 768 ){
-            $('#select-panel, #box-panel').insertBefore('#tickets');
+            $('#select-box').insertBefore('#tickets'); 
         }
 
         $('#select-panel .select').on('click', function () {

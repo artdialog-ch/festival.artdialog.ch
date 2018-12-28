@@ -393,6 +393,7 @@ header .h-main{
     display:none;
 }
 
+
 #h-slider .sl-text{
     padding: 0px 10px 0 20px;
     text-transform: uppercase;
@@ -410,7 +411,7 @@ header .h-main{
     margin: 2px 0; 
 	letter-spacing: 3px;
 	font-weight: 500;
-	color: white;
+	color: white; 	
 }
 
 #h-slider .sl-right{
@@ -690,37 +691,45 @@ header .h-main{
     color: #d44e14;
 }
 
+#select-box{
+	position: absolute;
+    bottom: 10px;
+    left: 25%;
+    width: 75%;
+}
+
 #select-panel{
-    display: flex;
+	display: flex;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 15px;
     width: 100%;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 2px;
-    color: #484848;
+    color: white;   
 }
 
 #select-panel .ctg, #box-panel .ctg{
-    flex: 0 0 60%;
-    cursor: pointer;
+    flex: 0 0 25%;
+    cursor: pointer;   
 }
 #select-panel .ort, #box-panel .ort{
-    flex: 0 0 40%;
+    flex: 0 0 auto;
     cursor: pointer;
 }
 
-#select-panel .select.active,
-#select-panel .select.selected{
-    color: #d44e14;
+#select-panel .select.active span,
+#select-panel .select.selected span{
+    color: #000000;
+	border:1px solid;
 }
 
 #box-panel{
     display: flex;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 15px;
     width: 100%;
     z-index: 100;
 }
@@ -748,11 +757,11 @@ header .h-main{
 }
 
 #box-panel .ort{
-    left: 60%
+    left: 25%;
 }
 
 #box-panel .box > div:hover{
-    color:#d44e14;
+    color:#000000;
 }
 
 #box-panel .ort.show, #box-panel .ctg.show {
@@ -820,7 +829,6 @@ ul.language li a, ul.language li span {
 }
 
 ul.language li a:hover {  
-				 
     color: white;
     transition: all 0.2s ease-in-out 0s;
 }
@@ -2437,7 +2445,6 @@ html{
 
     .front #h-slider, .h-wide #h-slider {
         flex: 0 0 70%; 
-						 
 		height: 30px;		
     }
 
@@ -2469,7 +2476,6 @@ html{
 
     .front .aside, .unsere .aside, .art-detail .aside {
         position: relative;        
-				   
     }
 
 
@@ -2797,7 +2803,6 @@ html{
 
     .front .aside, .unsere .aside, .art-detail .aside {
         position: relative;       
-				   
     }
 
 
@@ -2927,7 +2932,6 @@ html{
     .total .ad-items .second .img-side {
         padding: 0 15px;
     }
-
 
 	#header .page-title{		
 		line-height: 22px;
@@ -3097,7 +3101,7 @@ html{
         font-size: 40px;
     }
     .program{
-        margin: 0;
+        margin: 30px 0 0 0;
     }
     .program-item .date{
         position: relative;
@@ -3164,7 +3168,6 @@ html{
         height: 140px;
     }
 
-							
     .h-wide #h-slider .slide,
     #h-slider .slide {
 		display: flex;
@@ -3179,7 +3182,6 @@ html{
 		padding: 0 15px;
     }
 
-							   
     .h-wide #h-slider .sl-right,
     #h-slider .sl-right {
         flex: 1;
@@ -3198,7 +3200,6 @@ html{
 
     .front #h-slider .sl-left, .h-wide #h-slider .sl-left {
         flex: 0 0 60%;        
-						  
     }
 
 
@@ -3374,8 +3375,8 @@ html{
 
     #social-bar{
         position: absolute;
-        top:20px;
-        left:50%;
+        top:10px;
+        left:60%;
         margin-left: -20px;
     }
 
@@ -3383,6 +3384,10 @@ html{
         display: inline-block;
         margin: 0 6px;
         font-size: 20px;
+    }
+	
+	#social-bar .social a{
+        color: white;
     }
 
     .navbar-default {
@@ -3519,21 +3524,29 @@ html{
         font-size: 16px;
     }
 
+	
+	#select-box{
+		bottom:auto;
+		top:0;
+		left:30%;
+	}
 
     #select-panel {
-        top: -28px;
-        padding: 0 15px;
+        color:black;
+		left:0;
+		font-size: 14px;
     }
 
     #box-panel {
-        top: 0;
-        left: 15px;
+        left:0;
     }
 
-    #select-panel .ctg, #box-panel .ctg {
+    #select-panel .ctg, 
+	#box-panel .ctg, 
+	#box-panel .ort {
         flex: 0 0 50%;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
         min-width: 120px;
     }
@@ -3541,9 +3554,7 @@ html{
     #box-panel .ort {
         left: 45%;
         min-width: 100px;
-        padding: 10px 13px 15px 15px;
-        font-size: 16px;
-        line-height: 24px;
+        padding: 10px 13px 15px 15px;        
     }
 
 
@@ -3906,8 +3917,8 @@ html{
 
     #social-bar{
         position: absolute;
-        top:20px;
-        left:50%;
+        top:5px;
+        left:60%;
         margin-left: -20px;
     }
 
@@ -3915,6 +3926,10 @@ html{
         display: inline-block;
         margin: 0 6px;
         font-size: 20px;
+    }
+	
+	#social-bar .social a{
+        color:white;
     }
 
     .navbar-default {
