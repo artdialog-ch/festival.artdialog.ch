@@ -690,37 +690,46 @@ header .h-main{
     color: #d44e14;
 }
 
+
+ #select-box{
+ 	position: absolute;
+     bottom: 10px;
+     left: 25%;
+     width: 75%;
+ }
+ 
 #select-panel{
     display: flex;
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 15px;
     width: 100%;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 2px;
-    color: #484848;
+    color: white;
 }
 
 #select-panel .ctg, #box-panel .ctg{
-    flex: 0 0 60%;
+    flex: 0 0 25%;
     cursor: pointer;
 }
 #select-panel .ort, #box-panel .ort{
-    flex: 0 0 40%;
+    flex: 0 0 auto;
     cursor: pointer;
 }
 
-#select-panel .select.active,
-#select-panel .select.selected{
-    color: #d44e14;
+#select-panel .select.active span,
+#select-panel .select.selected span {
+    color: white;
+		border:1px solid;
 }
 
 #box-panel{
     display: flex;
     position: absolute;
     top: 100%;
-    left: 0;
+    left: 15px;
     width: 100%;
     z-index: 100;
 }
@@ -748,11 +757,11 @@ header .h-main{
 }
 
 #box-panel .ort{
-    left: 60%
+    left: 25%
 }
 
 #box-panel .box > div:hover{
-    color:#d44e14;
+    color:#000000;
 }
 
 #box-panel .ort.show, #box-panel .ctg.show {
@@ -1534,36 +1543,36 @@ address {
     margin-right: -70px;
 }
 
-.total .ad-items  .second{
+.theater .ad-items  .second{
     justify-content: flex-end;
 }
 
-.total .ad-items  .second .img-side{
+.theater .ad-items  .second .img-side{
     flex: 0 0 70%;
     position: relative;
     padding: 0 70px;
     max-width: 70%;
 }
 
-.total .ad-items  .second .text-side{
+.theater .ad-items  .second .text-side{
     padding-right: 0;
 }
 
-.total .ad-items .second .img-side::before{
+.theater .ad-items .second .img-side::before{
     right: 100%;
     left: inherit;
     margin-right: -70px;
 }
 
 
-.ad-items .detail-total-title {
+.ad-items .detail-theater-title {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 15px;
 }
 
-.ad-items .detail-total-text {
+.ad-items .detail-theater-text {
     font-size: 18px;
     font-weight: 300;
 }
@@ -2127,7 +2136,7 @@ div.fancy-select {
 	color: #af50c3;
 }
 
-.total span.turquoise {
+.theater span.turquoise {
 	color: #af50c3;
 }
 
@@ -2887,14 +2896,14 @@ html{
         font-size: 16px;
     }
 
-    .ad-items .detail-total-title {
+    .ad-items .detail-theater-title {
         font-size: 16px;
         font-weight: 500;
         text-transform: uppercase;
         margin-bottom: 10px;
     }
 
-    .ad-items .detail-total-text {
+    .ad-items .detail-theater-text {
         font-size: 16px;
         font-weight: 300;
     }
@@ -2924,7 +2933,7 @@ html{
         margin-top: 20px;
     }
 
-    .total .ad-items .second .img-side {
+    .theater .ad-items .second .img-side {
         padding: 0 15px;
     }
 
@@ -3097,7 +3106,7 @@ html{
         font-size: 40px;
     }
     .program{
-        margin: 0;
+        margin: 30px 0 0 0;
     }
     .program-item .date{
         position: relative;
@@ -3374,8 +3383,8 @@ html{
 
     #social-bar{
         position: absolute;
-        top:20px;
-        left:50%;
+        top:10px;
+        left:60%;
         margin-left: -20px;
     }
 
@@ -3384,6 +3393,10 @@ html{
         margin: 0 6px;
         font-size: 20px;
     }
+	
+	#social-bar .social a{
+         color: white;
+     }
 
     .navbar-default {
         background: none;
@@ -3510,7 +3523,7 @@ html{
         text-align: left;
         font-size: 16px;
     }
-
+	
     .ticket .right .place{
         font-size: 14px;
     }
@@ -3518,22 +3531,29 @@ html{
     .ticket .right .text{
         font-size: 16px;
     }
-
+	
+	#select-box{
+ 		bottom:auto;
+ 		top:0;
+ 		left:30%;
+ 	}
 
     #select-panel {
-        top: -28px;
-        padding: 0 15px;
+        color:black;
+			left:0;
+			font-size: 14px;
     }
 
     #box-panel {
-        top: 0;
-        left: 15px;
+        left: 0;
     }
 
-    #select-panel .ctg, #box-panel .ctg {
+    #select-panel .ctg, 
+		#box-panel .ctg, 
+		#box-panel .ort {
         flex: 0 0 50%;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
         min-width: 120px;
     }
@@ -3542,8 +3562,7 @@ html{
         left: 45%;
         min-width: 100px;
         padding: 10px 13px 15px 15px;
-        font-size: 16px;
-        line-height: 24px;
+        
     }
 
 
@@ -3599,11 +3618,11 @@ html{
     }
 
 
-    .ad-items .detail-total-title {
+    .ad-items .detail-theater-title {
         font-size: 16px;
     }
 
-    .ad-items .detail-total-text {
+    .ad-items .detail-theater-text {
         font-size: 16px;
     }
 
@@ -3611,13 +3630,13 @@ html{
         padding: 10px;
     }
 
-    .total .ad-items .second .img-side {
+    .theater .ad-items .second .img-side {
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0;
     }
 
-    .total .ad-items .second .text-side {
+    .theater .ad-items .second .text-side {
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0;
@@ -3903,20 +3922,23 @@ html{
 		padding-left: 0;
     }
 
-
     #social-bar{
         position: absolute;
-        top:20px;
-        left:50%;
+        top:5px;
+        left:60%;
         margin-left: -20px;
     }
-
+	
     #social-bar .social {
         display: inline-block;
         margin: 0 6px;
         font-size: 20px;
     }
-
+	
+	#social-bar .social a{
+         color:white;
+     }
+	 
     .navbar-default {
         background: none;
         border: none;
