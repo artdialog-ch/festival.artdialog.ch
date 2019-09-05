@@ -373,7 +373,7 @@ $(document).ready(function() {
 
 $(document).ready(function() {
 
-let galleryData;
+    let galleryData;
 	
 	let  galleryShow = (e) => {
 		e.preventDefault();
@@ -493,7 +493,12 @@ let galleryData;
 			gallery.append(rowYear);
 		});	
  		document.querySelector(".year-pager a").click();			
- 	}	
- 	$.post('/gallery.php', galleryInit);
+    }	
+     
+    const pathname = window.location.pathname;
+    const match = pathname.match(/[^/?]*[^/?]/g);
+    const params = match[1] === "kunstler.html" ?  {page: "kunstler"} : {}
+
+ 	$.post('/gallery.php', params, galleryInit);
 
 });
