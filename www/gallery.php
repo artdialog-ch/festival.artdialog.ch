@@ -1,14 +1,20 @@
 <?php 
 if (is_ajax()) {  
-   	gallery();   
+	$page = htmlspecialchars($_POST["page"]);
+   	gallery($page);   
 }
 //Function to check if the request is an AJAX request
 function is_ajax() {
   return isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
 }
 
-function gallery(){
+function gallery($page){
 	$dir ="assets/img/gallery";
+
+	if ( $page == "kunstler"){
+		$dir ="assets/img/kunstler";
+	}
+
 	$years = array();
 	$outyears = "";
 	$outputimg = "";
