@@ -3925,7 +3925,33 @@ html {
     font-size: 11px;
   }
 
+
   body {
     overflow: hidden;
   }
+
+
+  nav.navbar.navbar-default ul.nav.navbar-nav  > li.show-subnav > ul.subnav,
+  nav.navbar.navbar-default ul.nav.navbar-nav  > li > ul.subnav {
+    padding-inline-start: 0px;
+    display: block;
+  }
+}
+
+nav.navbar.navbar-default ul.nav.navbar-nav  > li.show-subnav > ul.subnav {
+  /*background-color: green;*/
+  /*border: 2px red solid;*/
+  display: block;
+}
+
+nav.navbar.navbar-default ul.nav.navbar-nav  > li > ul.subnav {
+  /*background-color: green;*/
+  /*border: 2px red solid;*/
+  display: none;
+}
+
+.navbar-default ul.subnav > .active > a {
+  background: transparent;
+  box-shadow: none;
+  color: #d44e14;
 }

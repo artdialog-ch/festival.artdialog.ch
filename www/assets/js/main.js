@@ -76,7 +76,18 @@ $( document ).ready(function() {
 
 				$("a[href='" + filename + "']").parent().addClass("active")
 
+				$("a[href='" + filename + "']").closest("ul.nav.navbar-nav  > li").addClass("show-subnav")
+
 				if (initOwlCarousel) initOwlCarousel();
+
+
+				$("ul.nav.navbar-nav  > li > a").click(function() {
+					var me =  $(this).parent();
+					me.addClass("active");
+					var hassubnavClass = me.hasClass("show-subnav");			
+					hassubnavClass && me.removeClass("show-subnav");
+					!hassubnavClass && me.addClass("show-subnav");
+				});
 			});
 		}
 
